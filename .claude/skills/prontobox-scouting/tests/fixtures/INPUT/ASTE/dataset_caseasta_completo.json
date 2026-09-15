@@ -1,0 +1,28 @@
+{
+ "generated_at": "2026-09-16T16:29:50.604695+00:00",
+ "total": 2,
+ "listings": {
+  "caseasta_32606": {
+   "source": "case-asta.it",
+   "city": "Verona",
+   "scraped_at": "2026-09-16T16:28:15.383036+00:00",
+   "id": "32606",
+   "url": "https://case-asta.it/villafranca-di-verona/32606",
+   "titolo": "STABILE SU TRE LIVELLI CON BAR MAGAZZINO...",
+   "prezzo": "€ 167.250",
+   "indirizzo": "Villafranca di Verona (VR) - Via Madonnina Di Prabiano 11",
+   "descrizione_completa": "Stabile su tre livelli con bar magazzino cantina e soffitta\r\n\r\nComposto al piano terra da bar, tre z..."
+  },
+  "caseasta_47837": {
+   "source": "case-asta.it",
+   "city": "Bolzano",
+   "scraped_at": "2026-09-16T16:27:20.440319+00:00",
+   "id": "47837",
+   "url": "https://case-asta.it/bolzano/47837",
+   "titolo": "MAGAZZINO 441MQ VIALE EUROPA BOLZANO",
+   "prezzo": "€ 273.000",
+   "indirizzo": "Bolzano (BZ) - Viale Europa 53",
+   "descrizione_completa": "Magazzino al primo piano interrato di 441mq in un edificio di 12 piani in Viale Europa a Bolzano. Al..."
+  }
+ }
+}

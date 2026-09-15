@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prontobox Scouting — Pannello settimanale</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="intestazione">
+  <div class="intestazione-riga">
+    <div class="intestazione-titolo">
+      <h1>Prontobox Scouting</h1>
+      <span class="badge-simula" id="badge-simula" hidden>Simulazione</span>
+    </div>
+  </div>
+  <nav class="schede">
+    <button data-schermo="home" class="attiva">Home</button>
+    <button data-schermo="avanzamento">Avanzamento</button>
+    <button data-schermo="risultati">Risultati</button>
+    <button data-schermo="storico">Storico</button>
+  </nav>
+</header>
+
+<main>
+  <section id="schermo-home" class="schermo"></section>
+  <section id="schermo-avanzamento" class="schermo" hidden></section>
+  <section id="schermo-risultati" class="schermo" hidden></section>
+  <section id="schermo-storico" class="schermo" hidden></section>
+</main>
+
+<footer class="piede">Pannello locale — visibile solo su questo computer (127.0.0.1)</footer>
+
+<div class="modale-sfondo" id="modale-conferma" hidden>
+  <div class="modale-finestra" id="modale-corpo"></div>
+</div>
+
+<div id="contenitore-toast"></div>
+
+<script>window.PB_TOKEN = "__TOKEN__";</script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+# =============================================================================
+# config.yaml - configurazione della skill prontobox-scouting
+# =============================================================================
+# Tutti i numeri che governano il comportamento della skill stanno qui, mai
+# scritti nel codice. Ogni parametro ha un commento che spiega cosa cambia se
+# lo si modifica. I percorsi sono relativi alla cartella "Pronto_Automation"
+# (il parametro --root di scout.py), salvo dove indicato diversamente.
+
+# --------------------------------------------------------------------------
+# PERCORSI
+# --------------------------------------------------------------------------
+percorsi:
+  # Cartella con i file delle aste (8 dataset_<fonte>_completo.json).
+  input_aste: "opportunities/INPUT/ASTE"
+  # Cartella con i soli annunci recenti di idealista/immobiliare (7 giorni).
+  input_immid: "opportunities/INPUT/IMM_ID/current_week"
+  # Cartella dove la skill scrive report, summary, cache e log. Non scrivere
+  # mai altrove.
+  output_dir: "opportunities/OUTPUT"
+  # Nome del file di report settimanale. {AAAA} {MM} {GG} vengono sostituiti
+  # con anno/mese/giorno della run (--data o data odierna).
+  formato_nome_report: "report_{AAAA}_{MM}_{GG}.json"
+
+# --------------------------------------------------------------------------
+# PERIMETRO GEOGRAFICO
+# --------------------------------------------------------------------------
+perimetro:
+  # Le 36 citta' coperte dagli scraper. Un comune con questo nome esatto e'
+  # sempre "in perimetro" (confidenza alta). Aggiungere una citta' qui non
+  # basta a farla scrappare: bisogna anche aggiornarla negli scraper.
+  comuni_target:
+    - "Bolzano"
+    - "Bologna"
+    - "Trento"
+    - "Padova"
+    - "Milano"
+    - "Parma"
+    - "Modena"
+    - "Reggio Emilia"
+    - "Brescia"
+    - "Monza"
+    - "Bergamo"
+    - "Verona"
+    - "Vicenza"
+    - "Firenze"
+    - "Pavia"
+    - "Como"
+    - "Piacenza"
+    - "Treviso"
+    - "Novara"
+    - "Cremona"
+    - "Cesena"
+    - "Forlì"
+    - "Pisa"
+    - "Udine"
+    - "Varese"
+    - "Ravenna"
+    - "Ancona"
+    - "Sesto San Giovanni"
+    - "Cinisello Balsamo"
+    - "Busto Arsizio"
+    - "Roma"
+    - "Legnano"
+    - "Prato"
+    - "Cagliari"
+    - "Pistoia"
+    - "Lucca"
+  # Citta' del perimetro di scraping che pero' vanto ESCLUSE dai risultati
+  # (regola di business "escludi Roma e Centro-Sud/Adriatico", vedi §1 del
+  # prompt). SCELTA DI PROGETTO: l'esclusione vale per nome comune E per
+  # l'intera provincia del comune escluso (es. "Ancona" esclude anche Jesi,
+  # che e' in provincia di Ancona), perche' l'intento dichiarato e' escludere
+  # l'intera area, non solo il capoluogo. Se questo non e' quello che si
+  # vuole, restringere comuni_esclusi a una lista di comuni invece che a
+  # "tutta la provincia" richiede una modifica in prontobox/geografia.py
+  # (funzione escluso_per_area).
+  comuni_esclusi:
+    - "Roma"
+    - "Cagliari"
+    - "Ancona"
+  # Raggio (km) entro cui un comune non capoluogo, ma nella stessa provincia
+  # o vicino per coordinate, e' comunque considerato in perimetro. Usato
+  # anche per la distanza aria-aria quando sono note le coordinate (solo
+  # immobiliare le fornisce quasi sempre). Aumentarlo include piu' hinterland,
+  # ridurlo lo stringe ai soli capoluoghi.
+  raggio_km: 20
+
+# --------------------------------------------------------------------------
+# FILTRI (Stadio 1 - hard filter)
+# --------------------------------------------------------------------------
+filtri:
+  # Fascia di superficie lorda dichiarata nell'annuncio (non SLN). Sotto il
+  # minimo: scarto. Sopra il massimo: nessuno scarto, solo penalita' nel voto.
+  superficie_min_mq: 1000
+  superficie_max_mq: 3000
+  # Percentuale sotto il minimo tollerata senza scarto (es. 950-999 m² con
+  # tolleranza 5%): flag AL_LIMITE_SOGLIA invece di scarto.
+  tolleranza_soglia_pct: 5
+  # Penalita' sul voto per gli immobili sopra superficie_max_mq: punti persi
+  # ogni 1.000 m² (o frazione) di eccedenza, fino a un massimo.
+  penalita_sopra_max_punti_per_1000mq: 5
+  penalita_sopra_max_massima: 15
+  # Giorni minimi tra oggi e la scadenza dell'asta perche' sia azionabile.
+  # Sotto questa soglia: MONITORA/TEMPO_INSUFFICIENTE.
+  giorni_minimi: 20
+  # Tra giorni_minimi e giorni_urgenza: flag di urgenza (serve a evidenziare
+  # nel pannello il conto alla rovescia in rosso).
+  giorni_urgenza: 35
+  # Prezzo per m² di SLN stimata sopra il quale si scarta a prescindere
+  # (taglia solo i casi assurdi, il prezzo "giusto" lo decide il gate
+  # economico dello Stadio 3).
+  soglia_hard_eur_mq_sln: 2500
+  # Prezzo sotto il quale un lotto va segnalato con PREZZO_ANOMALO (probabile
+  # cantina/posto auto/quota, tipico di asteflorio).
+  soglia_prezzo_anomalo_eur: 10000
+  # Altezza (m) plausibile per un valore letto da industrial.*Height o dal
+  # testo. Fuori da questo intervallo il valore viene scartato come errore
+  # di inserimento (es. "650 m").
+  altezza_plausibile_min_m: 2
+  altezza_plausibile_max_m: 20
+
+# --------------------------------------------------------------------------
+# SCORECARD (Stadio 2, 0-100)
+# --------------------------------------------------------------------------
+scorecard:
+  pesi:
+    # MERCATO (40)
+    iqss_comune: 12
+    saturazione_bacino: 10
+    visibilita_traffico: 12
+    qualita_bacino: 6
+    # IMMOBILE (38)
+    altezza_soppalcabilita: 13
+    efficienza_planimetrica: 11
+    accessibilita_operativa: 9
+    antincendio_involucro: 5
+    # RISCHIO E SVILUPPO (22)
+    percorso_autorizzativo: 12
+    espandibilita: 5
+    pulizia_tempi_transazione: 5
+  # Soglie delle classi (punteggio atteso, 0-100).
+  soglia_classe_a: 75
+  soglia_classe_b: 60
+  soglia_classe_c: 45
+  # Se l'intervallo (max - min) dello score supera questa soglia, l'esito
+  # diventa DA APPROFONDIRE invece di una classe assegnata con sicurezza.
+  ampiezza_range_max_per_classe: 15
+  # m² di self-storage concorrente per abitante nel bacino, oltre il quale
+  # scatta l'allerta di saturazione (§2 scorecard, "Saturazione del bacino").
+  soglia_saturazione_mq_per_abitante: 0.05
+  # Raggio (km) del bacino usato per concorrenti e poli retail.
+  raggio_bacino_km: 5
+  raggio_poli_retail_km: 2
+  # Scala altezza -> punti (§Stadio 2, "Altezza utile e soppalcabilita'").
+  altezza_punti:
+    sotto_3_0: 0
+    da_3_0_a_4_4: 4
+    da_4_5_a_5_4: 8
+    da_5_5: 13
+
+# --------------------------------------------------------------------------
+# ECONOMIA (Stadio 3 - gate economico)
+# --------------------------------------------------------------------------
+economia:
+  # NOTA IMPORTANTE (vedi README): 261 €/m²/anno e' una MEDIA NAZIONALE di
+  # settore. Va sostituita con il ricavo reale per m² SLN di Prontobox: e' il
+  # parametro che sposta di piu' tutte le soglie (±30-50%).
+  scenari_tariffa_eur_mq_anno: [261, 320, 380]
+  occupancy_regime: 0.82
+  margine_ebitda: 0.58
+  # Efficienza di trasformazione da superficie lorda a SLN (superficie
+  # locabile netta), usata quando non e' nota da dati specifici.
+  efficienza_sln_default: 0.68
+  efficienza_sln_min: 0.55
+  efficienza_sln_max: 0.75
+  # Fattore soppalco per fascia di altezza utile (aumenta la SLN).
+  fattore_soppalco_basso_h: 0.0      # h < 4,5 m
+  fattore_soppalco_medio_min: 0.4    # 4,5-5,4 m
+  fattore_soppalco_medio_max: 0.6
+  fattore_soppalco_alto_min: 0.7     # >= 5,5 m
+  fattore_soppalco_alto_max: 0.9
+  # Capex per m² di superficie lorda (non SLN), in €/m².
+  capex_baseline_min_eur_mq: 450
+  capex_baseline_max_eur_mq: 600
+  capex_soppalco_min_eur_mq: 150
+  capex_soppalco_max_eur_mq: 220
+  capex_sismico_min_eur_mq: 80
+  capex_sismico_max_eur_mq: 200
+  capex_strip_out_min_eur_mq: 30
+  capex_strip_out_max_eur_mq: 80
+  capex_amianto_min_eur_mq: 35
+  capex_amianto_max_eur_mq: 60
+  capex_recuperi_min_eur_mq: 0
+  capex_recuperi_max_eur_mq: 60
+  # Oneri di acquisto (imposte, notaio, spese d'asta, commissioni) come
+  # percentuale del prezzo.
+  oneri_acquisto_pct: 6
+  # Mesi al go-live per percorso autorizzativo (0 = gia' conforme, valore
+  # massimo = irregolarita' pesanti). Interpolato tra i due estremi in base
+  # al punteggio del percorso_autorizzativo (12 = 0 mesi, 2 = max mesi).
+  mesi_al_go_live_min: 0
+  mesi_al_go_live_max: 18
+  # Margine mensile stimato mancato per mese di ritardo (usato per calcolare
+  # lo sconto da chiedere in trattativa), come frazione dell'EBITDA annuo.
+  margine_mensile_mancato_frazione_ebitda_annuo: 0.06
+  # Oneri finanziari mensili sul costo_all_in durante l'attesa (frazione).
+  oneri_finanziari_mensili_pct: 0.3
+  # Hurdle rate (YoC minimo) per classe.
+  hurdle_classe_a: 0.09
+  hurdle_classe_b: 0.11
+  hurdle_classe_c: 0.14
+  # Riferimento comunicativo (non un filtro): costo €/m² SLN per uno YoC del
+  # 10% alla tariffa base. Serve solo per la valutazione testuale.
+  riferimento_costo_mq_sln_yoc10: 1250
+
+# --------------------------------------------------------------------------
+# VOTO (Stadio 4)
+# --------------------------------------------------------------------------
+voto:
+  peso_qualita: 0.70
+  peso_economico: 0.30
+  # Penalizza l'incertezza: quanto piu' ampio il range [min,max] dello score
+  # di qualita', tanto piu' il voto scende.
+  coeff_incertezza: 0.20
+
+# --------------------------------------------------------------------------
+# SELEZIONE SETTIMANALE E STORICO (§4)
+# --------------------------------------------------------------------------
+selezione:
+  # Quante opportunita' segnalare ogni settimana (top N).
+  n_segnalazioni: 10
+  # Ribasso di prezzo (%) sopra il quale scatta PREZZO_SCESO (negativo).
+  soglia_ribasso_pct: -3
+  # Ribasso (%) oltre il quale e' "anomalo": probabile cambio di perimetro
+  # del lotto, non un vero ribasso. Flag VERIFICARE_PERIMETRO_LOTTO.
+  soglia_ribasso_anomalo_pct: -50
+  # Variazione di voto (punti) sopra la quale scatta VOTO_SALITO o, in
+  # negativo, il peggioramento decisivo.
+  soglia_delta_voto: 5
+  # Restringimento minimo (punti) dell'intervallo di score perche' un dato
+  # sbloccato conti come cambio positivo anche senza cambio di esito.
+  soglia_restringimento_range: 10
+
+# --------------------------------------------------------------------------
+# RETE (fetch condizionale, §3.0.6)
+# --------------------------------------------------------------------------
+rete:
+  # Se falso, la skill non fa MAI fetch di pagine esterne: usa solo i dati
+  # gia' presenti nei file JSON (utile in ambienti senza accesso a Internet,
+  # come questo ambiente di build/test).
+  fetch_abilitato: false
+  rate_limit_secondi: 2
+  timeout_secondi: 15
+  cache_giorni: 7
+
+# --------------------------------------------------------------------------
+# PANNELLO (§7)
+# --------------------------------------------------------------------------
+pannello:
+  porta: 8765
+  # Dopo quanti giorni dall'ultima run la home mostra l'avviso in evidenza.
+  giorni_promemoria: 7
+  # Timeout (minuti) della fase di valutazione (Claude Code / fallback).
+  timeout_valutazione_min: 60
+  # Timeout (minuti) per ciascuno scraper aste, in parallelo.
+  timeout_scraper_min: 30
+  # Timeout (minuti) per CIASCUNA fonte della catena IMM_ID (idealista_completo,
+  # immobiliare_completo, run_opportunities_immid), eseguite in sequenza.
+  # Verificato dal vivo il 2026-09-17: idealista_completo da solo ha impiegato
+  # ~53 minuti su 36 città; immobiliare_completo (che fa anche una richiesta di
+  # arricchimento extra per annuncio) è stato TRONCATO a 60 minuti riusando per
+  # errore timeout_valutazione_min (pensato per la fase Claude, non per questo).
+  # Valore alto apposta: qui è più costoso un troncamento a metà (dati persi/
+  # incompleti) che aspettare qualche minuto in più.
+  timeout_immid_min: 180
+  # Impedisce la sospensione del PC durante la run (solo Windows).
+  impedisci_sospensione: true
+  # Elenco degli scraper aste lanciati in parallelo alla fase 2a. "script" e'
+  # relativo a Pronto_Automation. Modificare qui se gli scraper cambiano
+  # nome o argomenti: il pannello non ha nulla di questo scritto nel codice.
+  scraper_aste:
+    - fonte: astalegale
+      script: "scrapers_v2/scraper_astalegale_master.py"
+      argomenti: ["--no-resume"]
+    - fonte: asteannunci
+      script: "scrapers_v2/scraper_asteannunci_master.py"
+      argomenti: ["--no-resume"]
+    - fonte: asteflorio
+      script: "scrapers_v2/scraper_asteflorio_master.py"
+      argomenti: ["--no-resume"]
+    - fonte: caseasta
+      script: "scrapers_v2/scraper_caseasta_master.py"
+      argomenti: ["--no-resume"]
+    - fonte: fallcoaste
+      script: "scrapers_v2/scraper_fallcoaste_master.py"
+      argomenti: ["--no-resume"]
+    - fonte: medianord
+      script: "scrapers_v2/scraper_medianord_master.py"
+      argomenti: ["--no-resume"]
+    - fonte: venditegiudiziarie
+      script: "scrapers_v2/scraper_venditegiudiziarie_master.py"
+      argomenti: ["--no-resume"]
+    - fonte: worldcapital
+      script: "scrapers_v2/scraper_worldcapital_master.py"
+      argomenti: ["--no-resume"]
+  # Catena IMM_ID (§7.2, fase 2b): SEMPRE in sequenza, un Chrome alla volta.
+  catena_immid:
+    # headless=false (non headless=true): Idealista/Immobiliare sono protetti
+    # da DataDome e in modalita' headless il blocco anti-bot e' quasi certo
+    # (verificato dal vivo il 2026-09-17: bloccato su OGNI citta'). In
+    # modalita' visibile, se compare un controllo, si puo' risolverlo a mano
+    # nella finestra Chrome che si apre (lo scraper attende ~20s e riprova).
+    - fonte: idealista_completo
+      script: "scrapers_v2/scraper_idealista_master.py"
+      argomenti: ["--headless=false", "--max-pages", "60"]
+    - fonte: immobiliare_completo
+      script: "scrapers_v2/scraper_immobiliare_master.py"
+      argomenti: ["--headless=false", "--max-pages", "60"]
+    - fonte: run_opportunities_immid
+      script: "scrapers_v2/run_opportunities_immid.py"
+      argomenti: ["--headless", "false"]
+  # Comando reale che lancia Claude Code in produzione per generare il file
+  # --giudizi (§7.3). Da VERIFICARE con "claude --help" sulla versione
+  # installata sul PC dell'utente prima del primo uso: le opzioni esatte
+  # possono cambiare tra versioni. Il pannello sostituisce i segnaposto tra
+  # graffe con i valori reali della run.
+  comando_claude:
+    eseguibile: "claude"
+    argomenti:
+      - "-p"
+      - >-
+        Esegui la skill prontobox-scouting con data {DATA}. Segui esattamente
+        SKILL.md nella cartella .claude/skills/prontobox-scouting/: prima
+        'python scout.py --root . --data {DATA} prepara', poi leggi
+        opportunities/OUTPUT/.lavoro_testi_{DATA}.json e scrivi i giudizi
+        nello stesso formato di prontobox/giudizi_fallback.py in
+        opportunities/OUTPUT/.giudizi_{DATA}.json (contratto fisso, non
+        cambiare questo percorso: il pannello lo cerca lì), infine lancia
+        'python scout.py --root . --data {DATA} scrivi --giudizi
+        opportunities/OUTPUT/.giudizi_{DATA}.json' e fermati.
+      - "--output-format"
+      - "json"
+      - "--permission-mode"
+      - "acceptEdits"
+      - "--allowedTools"
+      - "Bash(python scout.py:*) Read(./opportunities/INPUT/**) Write(./opportunities/OUTPUT/**) WebFetch"
+    timeout_min: 60
+    # Percorso (relativo a --root) del file dei giudizi che il comando sopra
+    # deve produrre: il pannello lo passa a "scout.py scrivi --giudizi" come
+    # rete di sicurezza se Claude si ferma prima di lanciare scout.py da
+    # solo. {DATA} viene sostituito con AAAA-MM-GG.
+    percorso_giudizi: "opportunities/OUTPUT/.giudizi_{DATA}.json"

@@ -1,0 +1,49 @@
+{
+ "generated_at": "2026-09-16T14:28:38.094037+00:00",
+ "total": 2,
+ "listings": {
+  "idealista_36837357": {
+   "source": "idealista.it",
+   "id": "36837357",
+   "city": "Milano",
+   "category": "vendita-garage",
+   "scraped_at": "2026-09-16T14:15:55.419228+00:00",
+   "url": "https://www.idealista.it/immobile/36837357/",
+   "titolo": "Garage in Via Giovanni Battista Bertini, 34, Sarpi, Milano",
+   "prezzo": "70.000€",
+   "superficie_mq": null,
+   "prezzo_mq": null,
+   "zona": null,
+   "agenzia": "LUCKY CASE",
+   "descrizione_completa": "SEMPIONE – AMPIO BOX AUTO IN CONTESTO SIGNORILE\nIn Via G. B. Bertini, in una delle zone residenziali più apprezzate della città, grazie alla posizione centrale e alla vicinanza a Parco Sempione e al quartiere Moscova, proponiamo in vendita un ampio box auto situato al piano S1.\nL’autorimessa si trova all’interno di u",
+   "details": [
+    "Posto per macchina grande"
+   ],
+   "updated_days_ago_estimate": null,
+   "updated_at_estimate": null
+  },
+  "idealista_36822117": {
+   "source": "idealista.it",
+   "id": "36822117",
+   "city": "Milano",
+   "category": "vendita-edifici",
+   "scraped_at": "2026-09-16T14:15:00.073147+00:00",
+   "url": "https://www.idealista.it/immobile/36822117/",
+   "titolo": "Edificio a Isola, Milano",
+   "prezzo": "6.000.000€",
+   "superficie_mq": "7.500 m²",
+   "prezzo_mq": "800 €/m²",
+   "zona": null,
+   "agenzia": null,
+   "descrizione_completa": "V1957 Operazione di Sviluppo Edilizio Residenziale a Milano nord;\n72 Appartamenti + 83 Box da costruire a Nord di Milano tra i comuni di Arese, Cesate, Lainate, Origgio e Saronno. lungo le dorsali A8 Mi Laghi Via Vecchia Comasina S. p. 233 Varesina.\nRichiesta 6 milioni.\nPer ulteriori informazioni\nImmobililiare Europa s",
+   "details": [
+    "7.500 m²",
+    "800 €/m²",
+    "Senza inquilino"
+   ],
+   "updated_days_ago_estimate": 1,
+   "updated_at_estimate": "2026-09-15T14:15:07.958118+00:00",
+   "baseline_scraped_at": null
+  }
+ }
+}

@@ -1,0 +1,30 @@
+# Ambiente Python
+__pycache__/
+*.pyc
+
+# Profili Chrome persistenti (cookie di sessione legati a QUESTO pc: non
+# hanno senso su un altro dispositivo, e sono centinaia di MB di cache).
+scrapers_v2/profilo_chrome_idealista/
+scrapers_v2/profilo_chrome_immobiliare/
+
+# Dataset grezzi raccolti dagli scraper: rigenerati ad ogni run, alcuni
+# superano 1 GB (troppo grandi per git). Si condividono a parte (WeTransfer).
+scrapers_v2/dataset_*.json
+scrapers_v2/_tmp_*.json
+scrapers_v2/*_debug*.html
+
+# Log
+*.log
+
+# Dati raccolti e output del pannello: rigenerati ad ogni scansione,
+# si condividono a parte quando serve, non vanno versionati.
+opportunities/INPUT/
+opportunities/OUTPUT/
+
+# Stato operativo di una run del pannello (specifico di ogni PC)
+.run_state.json
+.run.lock
+.interrompi_richiesta
+
+# File temporanei
+*.tmp

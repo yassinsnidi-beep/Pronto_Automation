@@ -1,0 +1,34 @@
+{
+ "generated_at": "2026-09-13T13:57:25.159326+00:00",
+ "total": 2,
+ "listings": {
+  "medianord_capannoni-industriali_v1420": {
+   "source": "medianord.it",
+   "categoria": "capannoni-industriali",
+   "scraped_at": "2026-09-13T12:08:16.267452+00:00",
+   "id": "v1420",
+   "url": "https://www.medianord.it/annunci-immobiliari/capannone-industriale/vendita/monza-e-brianza/monza/v1420/",
+   "tipologia": "Capannone industriale",
+   "comune": "Monza",
+   "in_vendita": true,
+   "superficie_mq": "843",
+   "prezzo": "895.000",
+   "codice": "V1420",
+   "descrizione_completa": "Monza | In Vendita | Capannone industriale | Area totale | 843 mq | Cod. V1420 | € 895.000"
+  },
+  "medianord_capannoni-industriali_v1412-f1": {
+   "source": "medianord.it",
+   "categoria": "capannoni-industriali",
+   "scraped_at": "2026-09-13T12:08:16.267468+00:00",
+   "id": "v1412-f1",
+   "url": "https://www.medianord.it/annunci-immobiliari/capannone-industriale/vendita/bergamo/bergamo/v1412-f1/",
+   "tipologia": "Capannone industriale",
+   "comune": "Bergamo",
+   "in_vendita": true,
+   "superficie_mq": "12.000",
+   "prezzo": null,
+   "codice": "V1412.F1",
+   "descrizione_completa": "Bergamo | In Vendita | Capannone industriale | Area totale | 12.000 mq | Cod. V1412.F1 | Trattativa riservata"
+  }
+ }
+}

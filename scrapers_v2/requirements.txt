@@ -1,0 +1,10 @@
+# Dipendenze condivise da entrambi gli scraper (scraper_immobiliare_master.py
+# e scraper_idealista_master.py): entrambi usano Playwright con un vero Chrome
+# persistente per superare le protezioni DataDome dei due siti.
+playwright
+beautifulsoup4
+lxml
+
+# Dopo l'installazione è necessario che Playwright possa usare il Chrome
+# installato sul sistema (channel="chrome"):
+#   playwright install chrome

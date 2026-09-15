@@ -1,0 +1,6 @@
+# Unica dipendenza esterna della skill prontobox-scouting: serve a leggere
+# .claude/skills/prontobox-scouting/config.yaml (prontobox/config.py).
+# Il file "Avvia Prontobox Scouting.bat" la installa da solo al primo
+# avvio; questo file serve solo per installarla a mano, se preferito:
+#   pip install -r requirements.txt
+PyYAML>=6.0

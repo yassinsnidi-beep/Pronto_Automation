@@ -1,0 +1,2316 @@
+{
+ "generated_at": "2026-09-16T14:31:08.569655+00:00",
+ "total": 6,
+ "listings": {
+  "immobiliare_131398054": {
+   "source": "immobiliare.it",
+   "id": "131398054",
+   "city": "Milano",
+   "category": "vendita-capannoni",
+   "url": "https://www.immobiliare.it/annunci/131398054/",
+   "enriched": true,
+   "scraped_at": "2026-09-16T14:30:16.081529+00:00",
+   "titolo": "Capannone via Enrico Cosenz 44, Bovisa, Milano",
+   "prezzo": "€ 1.772.000",
+   "prezzo_valore": 1772000,
+   "superficie_mq": "591 m²",
+   "tipologia": "Capannone",
+   "categoria": "Capannoni",
+   "indirizzo": "Via Enrico Cosenz",
+   "comune": "Milano",
+   "provincia": "Milano",
+   "zona": "Affori, Bovisa",
+   "descrizione_completa": "Nel complesso immobiliare di via Cosenz 44, decorato con le inconfondibili visioni di Toiletpaper, proponiamo diverse soluzioni immobiliari.\nUnità 50:Capannone con cortile privato – Zona Bovisa – Altezza 10,25 mt – Convertibile in residenziale\n\nAdiacente al Polo universitario di Bovisa, proponiamo in vendita un affascinante capannone industriale allo stato rustico, con giardino di proprietà e altezze interne fino a 10 metri, perfetto per chi desidera creare uno spazio su misura in un contesto in forte trasformazione.\n\nSituato in un’area post-industriale oggetto di riqualificazione urbana, l’immobile si presta a molteplici usi, con possibilità di cambio destinazione d’uso a residenziale.\n\nCaratteristiche principali:\n- Altezze variabili da 7 a 10 metri\n- Ampie vetrate zenitali per una luminosità naturale\n- Spazio esterno privato\n- Flessibilità progettuale: ideale per loft, studi o showroom\n- Inclusi nel prezzo: rifacimento facciata, copertura e parti comuni\n- Posti auto disponibili\n- Servizio di portineria previsto\n\nUn’occasione unica per valorizzare un immobile in una delle zone più dinamiche e in crescita di Milano.\n\nPrezzo richiesto: € 1.772.000 \nDisponibili altre 3 soluzioni simili adiacenti.\n\nI render sono puramente illustrativi e non costituiscono vincolo contrattuale.",
+   "energy": {
+    "zeroEnergyBuilding": false,
+    "thermalInsulation": null,
+    "emission": null,
+    "class": {
+     "name": "G",
+     "color": "#b80000"
+    },
+    "epi": "≥ 3,51",
+    "epiUm": "m²",
+    "renewableEpiUm": "m²"
+   },
+   "costs": {
+    "appliedVat": null,
+    "agencyCommission": null,
+    "commissionSubject": null,
+    "condominiumExpenses": "€ 400/mese",
+    "notaryCommission": null
+   },
+   "surface": "591 m²",
+   "typology": {
+    "id": 109,
+    "name": "Capannone"
+   },
+   "contacts": null,
+   "raw_search": {
+    "visibility": "premium",
+    "dataType": "list-real-estate",
+    "id": 131398054,
+    "uuid": "d247455b-2fb9-521e-8c67-cc947d307e2d",
+    "advertiser": {
+     "agency": {
+      "id": 105634,
+      "type": "agency",
+      "showOnlyAgentPhone": false,
+      "phones": [
+       {
+        "type": "vTel1",
+        "value": "02 8736 1655"
+       }
+      ],
+      "bookableVisit": {
+       "isVisitBookable": true,
+       "virtualVisitEnabled": true
+      },
+      "isPaid": true,
+      "label": "agenzia",
+      "displayName": "Studio 2R Immobiliare",
+      "guaranteed": false,
+      "showAgentPhone": false,
+      "showLogo": true,
+      "imageUrls": {
+       "small": "https://pic.im-cdn.it/imagenoresize/1099384262.jpg",
+       "large": "https://pic.im-cdn.it/imagenoresize/1099384264.jpg"
+      },
+      "agencyUrl": "https://www.immobiliare.it/agenzie-immobiliari/105634/studio-2r-milano-via-felice-casati/",
+      "showExternalLink": false
+     },
+     "supervisor": {
+      "type": "agent",
+      "imageGender": "female",
+      "phones": [
+       {
+        "type": "vTel1",
+        "value": "02 8736 1655"
+       }
+      ],
+      "imageType": "agent",
+      "displayName": "Rosanna Dimmito",
+      "label": "agente immobiliare"
+     },
+     "hasCallNumbers": true
+    },
+    "contract": "sale",
+    "isNew": false,
+    "luxury": false,
+    "price": {
+     "visible": true,
+     "value": 1772000,
+     "formattedValue": "€ 1.772.000",
+     "priceRange": "oltre 500.000 &euro;"
+    },
+    "properties": [
+     {
+      "multimedia": {
+       "photos": [
+        {
+         "id": 1979964038,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964038/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964146,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964146/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964306,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964306/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964310,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964310/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965094,
+         "caption": "Cortile interno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965094/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965096,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965096/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965102,
+         "caption": "Facciata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965102/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964476,
+         "caption": "Facciata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964476/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964626,
+         "caption": "Interno palazzo",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964626/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964674,
+         "caption": "Terrazzo",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964674/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964552,
+         "caption": "Giardino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964552/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964950,
+         "caption": "Salone",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964950/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979964558,
+         "caption": "Mappa",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979964558/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965038,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965038/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965064,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965064/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965076,
+         "caption": "Ingresso",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965076/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965222,
+         "caption": "Facciata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965222/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965270,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965270/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965322,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965322/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1979965448,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1979965448/xxs-c.jpg"
+         }
+        }
+       ],
+       "virtualTours": [
+        null
+       ],
+       "hasMultimedia": true
+      },
+      "isMain": true,
+      "floor": {
+       "abbreviation": null,
+       "value": "Piano terra",
+       "floorOnlyValue": "piano terra",
+       "ga4FloorValue": "piano terra"
+      },
+      "ga4Condition": "Da ristrutturare",
+      "price": {
+       "visible": true,
+       "value": 1772000,
+       "formattedValue": "€ 1.772.000",
+       "priceRange": "oltre 500.000 &euro;"
+      },
+      "rooms": "1",
+      "surface": "591 m²",
+      "typology": {
+       "id": 265,
+       "name": "Capannone"
+      },
+      "ga4Garage": "4 posto auto",
+      "typologyGA4Translation": "Capannone",
+      "views": [
+       {
+        "id": 5,
+        "name": "panoramica"
+       }
+      ],
+      "ga4features": [
+       "reception",
+       "passo carrabile",
+       "spogliatoio",
+       "accesso per disabili",
+       "recintato"
+      ],
+      "ga4Heating": "Assente",
+      "caption": "Capannone con cortile privato – Zona Bovisa – Altezza 10",
+      "category": {
+       "id": 25,
+       "name": "Capannoni"
+      },
+      "photo": {
+       "id": 1979964038,
+       "caption": "Zona",
+       "urls": {
+        "small": "https://pwm.im-cdn.it/image/1979964038/xxs-c.jpg",
+        "medium": "https://pwm.im-cdn.it/image/1979964038/m-c.jpg",
+        "large": "https://pwm.im-cdn.it/image/1979964038/xxl.jpg"
+       }
+      },
+      "location": {
+       "address": "Via Enrico Cosenz",
+       "latitude": 45.50725937,
+       "longitude": 9.16343021,
+       "marker": "marker",
+       "region": "Lombardia",
+       "province": "Milano",
+       "macrozone": "Affori, Bovisa",
+       "microzone": "Bovisa",
+       "city": "Milano",
+       "nation": {
+        "id": "IT",
+        "name": "Italia"
+       }
+      },
+      "featureList": [
+       {
+        "type": "rooms",
+        "label": "1 locale",
+        "compactLabel": "1"
+       },
+       {
+        "type": "surface",
+        "label": "591 m²"
+       }
+      ]
+     }
+    ],
+    "title": "Capannone via Enrico Cosenz 44, Bovisa, Milano",
+    "type": "ad",
+    "typology": {
+     "id": 265,
+     "name": "Capannone"
+    },
+    "hasMainProperty": false,
+    "isProjectLike": false,
+    "isMosaic": false
+   },
+   "raw_detail": {
+    "pageProps": {
+     "detailData": {
+      "realEstate": {
+       "properties": [
+        {
+         "availability": "libero",
+         "buildingYear": 1950,
+         "cadastrals": [
+          {
+           "cadastralInfo": "Classe C/3, Rendita € 5.432"
+          }
+         ],
+         "condition": "Da ristrutturare",
+         "features": [
+          "Reception",
+          "Passo carrabile",
+          "Spogliatoio",
+          "Recintato"
+         ],
+         "floor": {
+          "abbreviation": null,
+          "value": "Piano terra, con accesso disabili",
+          "floorOnlyValue": "piano terra",
+          "ga4FloorValue": "piano terra"
+         },
+         "floors": "1 piano",
+         "industrial": {
+          "barnHeight": "10,2 m",
+          "underBeamHeight": "7,1 m",
+          "pillars": false,
+          "bayes": "1 - senza pilastri",
+          "numberLoadingDock": null,
+          "numberCranes": 1,
+          "payload": null
+         },
+         "location": {
+          "latitude": 45.50725937,
+          "longitude": 9.16343021,
+          "zoom": 15,
+          "nation": {
+           "id": "IT",
+           "name": "Italia",
+           "keyurl": "Italia"
+          },
+          "region": "Lombardia",
+          "province": "Milano",
+          "provinceId": "MI",
+          "city": "Milano",
+          "cityId": 8042,
+          "macrozone": "Affori, Bovisa",
+          "macrozoneId": 10072,
+          "microzone": "Bovisa",
+          "locality": null,
+          "address": "Via Enrico Cosenz",
+          "streetNumber": "44",
+          "marker": "marker"
+         },
+         "price": {
+          "visible": true,
+          "value": 1772000,
+          "formattedValue": "€ 1.772.000",
+          "priceRange": "oltre 500.000 &euro;",
+          "pricePerSquareMeter": "2.998 €/m²"
+         },
+         "surfaceConstitution": {
+          "surfaceConstitutionElements": [
+           {
+            "constitution": "Capannone",
+            "constitutionKey": "other",
+            "surface": "548,2 m²",
+            "percentage": 100,
+            "commercialSurface": "548,2 m²",
+            "floor": {
+             "value": "piano terra"
+            },
+            "surfaceType": "Principale"
+           },
+           {
+            "constitution": "Altro",
+            "constitutionKey": "other",
+            "surface": "57,7 m²",
+            "percentage": 25,
+            "commercialSurface": "14,4 m²",
+            "floor": {
+             "value": "piano terra"
+            },
+            "surfaceType": "Principale"
+           },
+           {
+            "constitution": "Altro",
+            "constitutionKey": "other",
+            "surface": "28,1 m²",
+            "percentage": 100,
+            "commercialSurface": "28,1 m²",
+            "floor": {
+             "value": "piano terra"
+            },
+            "surfaceType": "Principale"
+           }
+          ],
+          "totalMainSurface": "590,7 m²"
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "updated_at": "2026-07-29T13:05:07+00:00",
+   "baseline_scraped_at": "2026-09-13T13:45:40.675397+00:00",
+   "staleness_diff_days": 46.028167539317124,
+   "stale_streak_at_this_point": 1
+  },
+  "immobiliare_130814250": {
+   "source": "immobiliare.it",
+   "id": "130814250",
+   "city": "Milano",
+   "category": "vendita-capannoni",
+   "url": "https://www.immobiliare.it/annunci/130814250/",
+   "enriched": true,
+   "scraped_at": "2026-09-16T14:30:23.134447+00:00",
+   "titolo": "Capannone via Dante Chiasserini 17, Bovisasca, Milano",
+   "prezzo": "€ 2.700.000",
+   "prezzo_valore": 2700000,
+   "superficie_mq": "2.000 m²",
+   "tipologia": "Capannone",
+   "categoria": "Capannoni",
+   "indirizzo": "Via Dante Chiasserini",
+   "comune": "Milano",
+   "provincia": "Milano",
+   "zona": "Affori, Bovisa",
+   "descrizione_completa": "MILANO:: Zona Bovisasca, Via Dante Chiasserini \nPer info e appuntamenti contattare il numero 3493723263 \nProponiamo in vendita un fabbricato di circa 2.000 mq complessivi, composto da tre unità abitative, ampio laboratorio, magazzini e cortile privato con cancello elettrico e accesso pedonale. L’immobile presenta un’altezza massima di 6 metri e si presta a molteplici opportunità di investimento e riqualificazione. Grazie alla versatilità degli spazi, rappresenta una soluzione ideale per operatori immobiliari e investitori interessati alla trasformazione dell’area in diverse tipologie progettuali. La proprietà è situata in posizione strategica, a circa 20 minuti a piedi dalla stazione ferroviaria e dalla linea M3 Affori FN, in una zona ben servita da attività commerciali, servizi di prima necessità e mezzi pubblici di superficie. Inoltre, l’immobile si trova a circa 20 minuti dai principali poli universitari.",
+   "energy": {
+    "zeroEnergyBuilding": false,
+    "thermalInsulation": null,
+    "emission": null,
+    "heatingType": "autonomo, a radiatori, alimentato a fotovoltaico",
+    "airConditioning": "autonomo, freddo/caldo",
+    "class": {
+     "name": "C",
+     "color": "#ebc400"
+    },
+    "epi": 103.65,
+    "epiUm": "m²"
+   },
+   "costs": {
+    "appliedVat": null,
+    "agencyCommission": null,
+    "commissionSubject": null,
+    "notaryCommission": null
+   },
+   "surface": "2.000 m²",
+   "typology": {
+    "id": 109,
+    "name": "Capannone"
+   },
+   "contacts": null,
+   "raw_search": {
+    "visibility": "premium",
+    "dataType": "list-real-estate",
+    "id": 130814250,
+    "uuid": "88eeb45f-5642-5f17-8a7f-fcb9765817de",
+    "advertiser": {
+     "agency": {
+      "id": 469760,
+      "type": "agency",
+      "showOnlyAgentPhone": false,
+      "phones": [
+       {
+        "type": "vTel1",
+        "value": "02 8127 8767"
+       }
+      ],
+      "bookableVisit": {
+       "isVisitBookable": true,
+       "virtualVisitEnabled": true
+      },
+      "isPaid": true,
+      "label": "agenzia",
+      "displayName": "Francesco Bianchi",
+      "guaranteed": false,
+      "showAgentPhone": false,
+      "showLogo": true,
+      "agencyUrl": "https://www.immobiliare.it/agenzie-immobiliari/469760/francesco-bianchi/",
+      "showExternalLink": false
+     },
+     "supervisor": {
+      "type": "agent",
+      "imageGender": "male",
+      "phones": [
+       {
+        "type": "vTel1",
+        "value": "02 8127 8767"
+       }
+      ],
+      "imageType": "agent",
+      "displayName": "FRANCESCO BIANCHI",
+      "label": "agente immobiliare",
+      "imageUrl": "https://pic.im-cdn.it/agenti/612658/1887012806/80.jpg"
+     },
+     "hasCallNumbers": true
+    },
+    "contract": "sale",
+    "isNew": false,
+    "luxury": false,
+    "price": {
+     "visible": true,
+     "value": 2700000,
+     "formattedValue": "€ 2.700.000",
+     "priceRange": "oltre 500.000 &euro;"
+    },
+    "properties": [
+     {
+      "multimedia": {
+       "photos": [
+        {
+         "id": 1966572446,
+         "caption": "Cortile interno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572446/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572476,
+         "caption": "Cortile interno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572476/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572508,
+         "caption": "Magazzino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572508/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572526,
+         "caption": "Magazzino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572526/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572550,
+         "caption": "Cortile interno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572550/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572578,
+         "caption": "Magazzino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572578/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572614,
+         "caption": "Magazzino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572614/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572640,
+         "caption": "Cantina",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572640/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572672,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572672/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572704,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572704/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572728,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572728/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572754,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572754/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572776,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572776/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572794,
+         "caption": "Cortile interno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572794/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572822,
+         "caption": "Cortile interno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572822/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572844,
+         "caption": "Terreno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572844/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572864,
+         "caption": "Terreno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572864/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572902,
+         "caption": "Terreno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572902/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572926,
+         "caption": "Terreno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572926/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572962,
+         "caption": "Terreno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572962/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966572988,
+         "caption": "Stanza non arredata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966572988/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573006,
+         "caption": "Camera da letto",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573006/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573022,
+         "caption": "Bagno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573022/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573056,
+         "caption": "Box auto",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573056/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573076,
+         "caption": "Camera da letto",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573076/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573098,
+         "caption": "Terrazzo",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573098/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573126,
+         "caption": "Terrazzo",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573126/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573146,
+         "caption": "Camera da letto",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573146/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573176,
+         "caption": "Cucina",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573176/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573212,
+         "caption": "Camera da letto",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573212/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573238,
+         "caption": "Camera da letto",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573238/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573254,
+         "caption": "Planimetria",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573254/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573276,
+         "caption": "Planimetria",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573276/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573292,
+         "caption": "Planimetria",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573292/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573302,
+         "caption": "Planimetria",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573302/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1966573316,
+         "caption": "Planimetria",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1966573316/xxs-c.jpg"
+         }
+        }
+       ],
+       "virtualTours": [],
+       "hasMultimedia": true
+      },
+      "bathrooms": "3+",
+      "isMain": true,
+      "floor": {
+       "abbreviation": null,
+       "value": "Piano terra",
+       "floorOnlyValue": "piano terra",
+       "ga4FloorValue": "piano terra"
+      },
+      "ga4Condition": "Buono / Abitabile",
+      "price": {
+       "visible": true,
+       "value": 2700000,
+       "formattedValue": "€ 2.700.000",
+       "priceRange": "oltre 500.000 &euro;"
+      },
+      "rooms": "5",
+      "surface": "2.000 m²",
+      "typology": {
+       "id": 265,
+       "name": "Capannone"
+      },
+      "ga4Garage": "4 posto auto",
+      "typologyGA4Translation": "Capannone",
+      "ga4features": [
+       "passo carrabile",
+       "impianto di allarme",
+       "spogliatoio",
+       "bagno per disabili",
+       "docce",
+       "mensa",
+       "recintato"
+      ],
+      "ga4Heating": "Autonomo",
+      "caption": "FABBRICATO CON APPARTAMENTI E AREA PRODUZZIONE",
+      "category": {
+       "id": 25,
+       "name": "Capannoni"
+      },
+      "photo": {
+       "id": 1966572446,
+       "caption": "Cortile interno",
+       "urls": {
+        "small": "https://pwm.im-cdn.it/image/1966572446/xxs-c.jpg",
+        "medium": "https://pwm.im-cdn.it/image/1966572446/m-c.jpg",
+        "large": "https://pwm.im-cdn.it/image/1966572446/xxl.jpg"
+       }
+      },
+      "location": {
+       "address": "Via Dante Chiasserini",
+       "latitude": 45.51195908,
+       "longitude": 9.15594006,
+       "marker": "marker",
+       "region": "Lombardia",
+       "province": "Milano",
+       "macrozone": "Affori, Bovisa",
+       "microzone": "Bovisasca",
+       "city": "Milano",
+       "nation": {
+        "id": "IT",
+        "name": "Italia"
+       }
+      },
+      "featureList": [
+       {
+        "type": "rooms",
+        "label": "5 locali",
+        "compactLabel": "5"
+       },
+       {
+        "type": "surface",
+        "label": "2.000 m²"
+       },
+       {
+        "type": "bathrooms",
+        "label": "3+ bagni",
+        "compactLabel": "3+"
+       }
+      ]
+     }
+    ],
+    "title": "Capannone via Dante Chiasserini 17, Bovisasca, Milano",
+    "type": "ad",
+    "typology": {
+     "id": 265,
+     "name": "Capannone"
+    },
+    "hasMainProperty": false,
+    "isProjectLike": false,
+    "isMosaic": false
+   },
+   "raw_detail": {
+    "pageProps": {
+     "detailData": {
+      "realEstate": {
+       "properties": [
+        {
+         "availability": "libero",
+         "buildingYear": 1900,
+         "cadastrals": [],
+         "condition": "Buono / Abitabile",
+         "features": [
+          "Passo carrabile",
+          "Impianto di allarme",
+          "Spogliatoio",
+          "Docce",
+          "Mensa",
+          "Recintato"
+         ],
+         "floor": {
+          "abbreviation": null,
+          "value": "Piano terra",
+          "floorOnlyValue": "piano terra",
+          "ga4FloorValue": "piano terra"
+         },
+         "floors": "1 piano",
+         "industrial": {
+          "barnHeight": "650 m",
+          "underBeamHeight": null,
+          "pillars": false,
+          "bayes": null,
+          "numberLoadingDock": null,
+          "numberCranes": null,
+          "payload": null
+         },
+         "location": {
+          "latitude": 45.51195908,
+          "longitude": 9.15594006,
+          "zoom": 15,
+          "nation": {
+           "id": "IT",
+           "name": "Italia",
+           "keyurl": "Italia"
+          },
+          "region": "Lombardia",
+          "province": "Milano",
+          "provinceId": "MI",
+          "city": "Milano",
+          "cityId": 8042,
+          "macrozone": "Affori, Bovisa",
+          "macrozoneId": 10072,
+          "microzone": "Bovisasca",
+          "locality": null,
+          "address": "Via Dante Chiasserini",
+          "streetNumber": "17",
+          "marker": "marker"
+         },
+         "price": {
+          "visible": true,
+          "value": 2700000,
+          "formattedValue": "€ 2.700.000",
+          "priceRange": "oltre 500.000 &euro;",
+          "pricePerSquareMeter": "1.350 €/m²"
+         },
+         "surfaceConstitution": {
+          "surfaceConstitutionElements": [
+           {
+            "constitution": "Capannone",
+            "constitutionKey": "other",
+            "surface": "2.000,0 m²",
+            "percentage": 100,
+            "commercialSurface": "2.000,0 m²",
+            "floor": {
+             "value": "piano terra"
+            },
+            "surfaceType": "Principale"
+           }
+          ],
+          "totalMainSurface": "2.000,0 m²"
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "updated_at": "2026-07-09T14:17:43+00:00",
+   "baseline_scraped_at": "2026-09-13T13:46:16.229366+00:00",
+   "staleness_diff_days": 65.97816237692129,
+   "stale_streak_at_this_point": 3
+  },
+  "immobiliare_131138538": {
+   "source": "immobiliare.it",
+   "id": "131138538",
+   "city": "Milano",
+   "category": "vendita-capannoni",
+   "url": "https://www.immobiliare.it/annunci/131138538/",
+   "enriched": true,
+   "scraped_at": "2026-09-16T14:30:19.441337+00:00",
+   "titolo": "Capannone via Vallarsa 10, Ripamonti - Fondazione Prada, Milano",
+   "prezzo": "€ 5.000.000",
+   "prezzo_valore": 5000000,
+   "superficie_mq": "1.200 m²",
+   "tipologia": "Capannone",
+   "categoria": "Capannoni",
+   "indirizzo": "Via Vallarsa",
+   "comune": "Milano",
+   "provincia": "Milano",
+   "zona": "Ripamonti, Vigentino",
+   "descrizione_completa": "Ingresso con reception e bar un Capannone, studio divisibile con uffici annessi. Molto luminoso con possibilità di oscurare ",
+   "energy": {
+    "zeroEnergyBuilding": false,
+    "thermalInsulation": null,
+    "emission": null,
+    "heatingType": "autonomo",
+    "airConditioning": "freddo/caldo",
+    "class": {
+     "name": "A",
+     "color": "#7fb802"
+    },
+    "epi": 120,
+    "epiUm": "m²"
+   },
+   "costs": {
+    "appliedVat": null,
+    "agencyCommission": null,
+    "commissionSubject": null,
+    "notaryCommission": null
+   },
+   "surface": "1.200 m²",
+   "typology": {
+    "id": 109,
+    "name": "Capannone"
+   },
+   "contacts": null,
+   "raw_search": {
+    "visibility": "top",
+    "dataType": "list-real-estate",
+    "id": 131138538,
+    "uuid": "088f78da-6492-59f9-a7cf-197448d96454",
+    "advertiser": {
+     "supervisor": {
+      "type": "user",
+      "imageGender": "male",
+      "phones": [],
+      "imageType": "user",
+      "label": "privato"
+     },
+     "hasCallNumbers": false
+    },
+    "contract": "sale",
+    "isNew": false,
+    "luxury": false,
+    "price": {
+     "visible": true,
+     "value": 5000000,
+     "formattedValue": "€ 5.000.000",
+     "priceRange": "oltre 500.000 &euro;"
+    },
+    "properties": [
+     {
+      "multimedia": {
+       "photos": [
+        {
+         "id": 1973937548,
+         "caption": "",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1973937548/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1973937558,
+         "caption": "",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1973937558/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1973937564,
+         "caption": "",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1973937564/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1973937572,
+         "caption": "",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1973937572/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1973937578,
+         "caption": "",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1973937578/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 1973937582,
+         "caption": "",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1973937582/xxs-c.jpg"
+         }
+        }
+       ],
+       "virtualTours": [],
+       "hasMultimedia": true
+      },
+      "isMain": true,
+      "floor": {
+       "abbreviation": null,
+       "value": "Piano terra",
+       "floorOnlyValue": "piano terra",
+       "ga4FloorValue": "piano terra"
+      },
+      "ga4Condition": "Ottimo / Ristrutturato",
+      "price": {
+       "visible": true,
+       "value": 5000000,
+       "formattedValue": "€ 5.000.000",
+       "priceRange": "oltre 500.000 &euro;"
+      },
+      "surface": "1.200 m²",
+      "typology": {
+       "id": 265,
+       "name": "Capannone"
+      },
+      "typologyGA4Translation": "Capannone",
+      "ga4features": [
+       "reception",
+       "passo carrabile",
+       "impianto di allarme",
+       "docce"
+      ],
+      "ga4Heating": "Autonomo",
+      "category": {
+       "id": 25,
+       "name": "Capannoni"
+      },
+      "photo": {
+       "id": 1973937548,
+       "caption": "",
+       "urls": {
+        "small": "https://pwm.im-cdn.it/image/1973937548/xxs-c.jpg",
+        "medium": "https://pwm.im-cdn.it/image/1973937548/m-c.jpg",
+        "large": "https://pwm.im-cdn.it/image/1973937548/xxl.jpg"
+       }
+      },
+      "location": {
+       "address": "Via Vallarsa",
+       "latitude": 45.44316101,
+       "longitude": 9.21123028,
+       "marker": "marker",
+       "region": "Lombardia",
+       "province": "Milano",
+       "macrozone": "Ripamonti, Vigentino",
+       "microzone": "Ripamonti - Fondazione Prada",
+       "city": "Milano",
+       "nation": {
+        "id": "IT",
+        "name": "Italia"
+       }
+      },
+      "featureList": [
+       {
+        "type": "surface",
+        "label": "1.200 m²"
+       }
+      ]
+     }
+    ],
+    "title": "Capannone via Vallarsa 10, Ripamonti - Fondazione Prada, Milano",
+    "type": "ad",
+    "typology": {
+     "id": 265,
+     "name": "Capannone"
+    },
+    "hasMainProperty": false,
+    "isProjectLike": false,
+    "isMosaic": false
+   },
+   "raw_detail": {
+    "pageProps": {
+     "detailData": {
+      "realEstate": {
+       "properties": [
+        {
+         "availability": "libero",
+         "buildingYear": 2021,
+         "cadastrals": [],
+         "condition": "Ottimo / Ristrutturato",
+         "features": [
+          "Reception",
+          "Passo carrabile",
+          "Impianto di allarme",
+          "Docce"
+         ],
+         "floor": {
+          "abbreviation": null,
+          "value": "Piano terra",
+          "floorOnlyValue": "piano terra",
+          "ga4FloorValue": "piano terra"
+         },
+         "industrial": {
+          "barnHeight": null,
+          "underBeamHeight": null,
+          "pillars": false,
+          "bayes": null,
+          "numberLoadingDock": null,
+          "numberCranes": null,
+          "payload": null
+         },
+         "location": {
+          "latitude": 45.44316101,
+          "longitude": 9.21123028,
+          "zoom": 17,
+          "nation": {
+           "id": "IT",
+           "name": "Italia",
+           "keyurl": "Italia"
+          },
+          "region": "Lombardia",
+          "province": "Milano",
+          "provinceId": "MI",
+          "city": "Milano",
+          "cityId": 8042,
+          "macrozone": "Ripamonti, Vigentino",
+          "macrozoneId": 10293,
+          "microzone": "Ripamonti - Fondazione Prada",
+          "locality": null,
+          "address": "Via Vallarsa",
+          "streetNumber": "10",
+          "marker": "marker"
+         },
+         "price": {
+          "visible": true,
+          "value": 5000000,
+          "formattedValue": "€ 5.000.000",
+          "priceRange": "oltre 500.000 &euro;",
+          "pricePerSquareMeter": "2.262 €/m²"
+         },
+         "surfaceConstitution": {
+          "surfaceConstitutionElements": [
+           {
+            "constitution": "Capannone",
+            "constitutionKey": "other",
+            "surface": "1.200,0 m²",
+            "percentage": 100,
+            "commercialSurface": "1.200,0 m²",
+            "floor": {
+             "value": "piano terra"
+            },
+            "surfaceType": "Principale"
+           },
+           {
+            "constitution": "Piazzale",
+            "constitutionKey": "other",
+            "surface": "100,0 m²",
+            "percentage": 10,
+            "commercialSurface": "10,0 m²",
+            "surfaceType": "Accessoria"
+           },
+           {
+            "constitution": "Ufficio o Studio",
+            "constitutionKey": "office",
+            "surface": "1.000,0 m²",
+            "percentage": 100,
+            "commercialSurface": "1.000,0 m²",
+            "surfaceType": "Accessoria"
+           }
+          ],
+          "totalMainSurface": "1.200,0 m²",
+          "totalCommercialSurface": "2.210,0 m²"
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "updated_at": "2026-09-15T11:45:09+00:00",
+   "baseline_scraped_at": "2026-09-13T13:45:37.250436+00:00",
+   "staleness_diff_days": 1.9163396940277777
+  },
+  "immobiliare_132452472": {
+   "source": "immobiliare.it",
+   "id": "132452472",
+   "city": "Milano",
+   "category": "vendita-capannoni",
+   "url": "https://www.immobiliare.it/annunci/132452472/",
+   "enriched": true,
+   "scraped_at": "2026-09-16T14:30:08.885681+00:00",
+   "titolo": "Capannone via Caviglia 3, Bologna - Sulmona, Milano",
+   "prezzo": "€ 1.550.000",
+   "prezzo_valore": 1550000,
+   "superficie_mq": "733 m²",
+   "tipologia": "Capannone",
+   "categoria": "Capannoni",
+   "indirizzo": "Via Caviglia",
+   "comune": "Milano",
+   "provincia": "Milano",
+   "zona": "Porta Vittoria, Lodi",
+   "descrizione_completa": "In Via Enrico Caviglia, proponiamo in vendita in esclusiva un immobile cielo terra di testa che si sviluppa su una superficie complessiva di Mq 733, unico per le sue caratteristiche con tripla esposizione, grande luminosità e notevole versatilità degli spazi. La proprietà si presenta in ottime condizioni ed è completamente climatizzata. Gli ambienti interni sono organizzati in maniera razionale e funzionale e comprendono: reception, uffici, spazi direzionali, sale e locali operativi, facilmente adattabili alle differenti esigenze aziendali. La posizione di testa all'interno del complesso dotato di portineria e videosorveglianza, rappresenta un importante valore aggiunto, garantendo maggiore indipendenza, privacy e luminosità naturale. Completano la proprietà piacevoli spazi esterni di pertinenza, in parte piantumati e attrezzati come area relax, oltre a 6 posti auto privati e 3 ingressi carrai. E' inoltre possibile prevedere l'installazione di colonnine per la ricarica delle auto elettriche e di pannelli solari, caratteristiche che consentono di valorizzare ulteriormente l'immobile sotto il profilo dell'efficienza energetica e della sostenibilità. La superficie disponibile e la configurazione dell'immobile consentono di valutare anche la possibilità di frazionamento, rendendo la proprietà particolarmente interessante sia per un utilizzatore finale sia per un investitore. Per caratteristiche, dimensioni e flessibilità degli ambienti, l'immobile si presta perfettamente a headquarter aziendale, sede direzionale, showroom, studi professionali, attività creative, formative e operative. Una soluzione di particolare interesse per chi ricerca a Milano una sede indipendente, rappresentativa, funzionale e con importanti possibilità di valorizzazione. Ci troviamo all' interno di una zona in grande sviluppo con la presenza di numerose importanti realtà commerciali. A 500 metri troviamo l' ingresso alle Tangenziali, la fermata della metropolitana linea gialla e la",
+   "energy": {
+    "zeroEnergyBuilding": false,
+    "thermalInsulation": null,
+    "emission": null,
+    "heatingType": "autonomo",
+    "airConditioning": "autonomo",
+    "class": {
+     "name": "D",
+     "color": "#eb9d00"
+    },
+    "epi": 28,
+    "epiUm": "m²"
+   },
+   "costs": {
+    "appliedVat": null,
+    "agencyCommission": null,
+    "commissionSubject": null,
+    "condominiumExpenses": "€ 800/mese",
+    "notaryCommission": null
+   },
+   "surface": "733 m²",
+   "typology": {
+    "id": 109,
+    "name": "Capannone"
+   },
+   "contacts": null,
+   "raw_search": {
+    "visibility": "vetrina",
+    "dataType": "list-real-estate",
+    "id": 132452472,
+    "uuid": "54872943-2a0d-5c43-a565-6cae2943f483",
+    "advertiser": {
+     "agency": {
+      "id": 247969,
+      "type": "agency",
+      "showOnlyAgentPhone": false,
+      "phones": [
+       {
+        "type": "vTel1",
+        "value": "02 8974 7613"
+       }
+      ],
+      "bookableVisit": {
+       "isVisitBookable": true,
+       "virtualVisitEnabled": false
+      },
+      "isPaid": true,
+      "label": "agenzia",
+      "displayName": "Cofim Milano",
+      "guaranteed": false,
+      "showAgentPhone": false,
+      "showLogo": true,
+      "imageUrls": {
+       "small": "https://pic.im-cdn.it/imagenoresize/918302333.jpg",
+       "large": "https://pic.im-cdn.it/imagenoresize/918302335.jpg"
+      },
+      "agencyUrl": "https://www.immobiliare.it/agenzie-immobiliari/247969/cofim-milano/",
+      "showExternalLink": false
+     },
+     "hasCallNumbers": true
+    },
+    "contract": "sale",
+    "isNew": true,
+    "luxury": false,
+    "price": {
+     "visible": true,
+     "value": 1550000,
+     "formattedValue": "€ 1.550.000",
+     "priceRange": "oltre 500.000 &euro;"
+    },
+    "properties": [
+     {
+      "multimedia": {
+       "photos": [
+        {
+         "id": 2005195146,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195146/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195148,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195148/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195152,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195152/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195156,
+         "caption": "Facciata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195156/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195158,
+         "caption": "Facciata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195158/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195160,
+         "caption": "Facciata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195160/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195162,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195162/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195164,
+         "caption": "Facciata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195164/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195166,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195166/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195168,
+         "caption": "Facciata",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195168/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195170,
+         "caption": "Posto macchina",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195170/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195172,
+         "caption": "Terrazzo",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195172/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195174,
+         "caption": "Giardino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195174/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195176,
+         "caption": "Giardino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195176/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195178,
+         "caption": "Giardino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195178/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195180,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195180/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195182,
+         "caption": "Ufficio",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195182/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195184,
+         "caption": "Magazzino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195184/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195186,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195186/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195188,
+         "caption": "Ufficio",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195188/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195190,
+         "caption": "Ufficio",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195190/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195192,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195192/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195194,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195194/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195196,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195196/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195198,
+         "caption": "Ufficio",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195198/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195200,
+         "caption": "Bagno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195200/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195202,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195202/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195204,
+         "caption": "Scala",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195204/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195206,
+         "caption": "Ufficio",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195206/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195208,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195208/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195210,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195210/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195212,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195212/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195214,
+         "caption": "Ufficio",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195214/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195216,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195216/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195218,
+         "caption": "Ufficio",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195218/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195220,
+         "caption": "Interno non residenziale",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195220/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195222,
+         "caption": "Ufficio",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195222/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195224,
+         "caption": "Bagno",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195224/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195226,
+         "caption": "Box auto",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195226/xxs-c.jpg"
+         }
+        },
+        {
+         "id": 2005195228,
+         "caption": "Giardino",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2005195228/xxs-c.jpg"
+         }
+        }
+       ],
+       "virtualTours": [],
+       "hasMultimedia": true
+      },
+      "bathrooms": "3+",
+      "isMain": true,
+      "ga4Condition": "Ottimo / Ristrutturato",
+      "price": {
+       "visible": true,
+       "value": 1550000,
+       "formattedValue": "€ 1.550.000",
+       "priceRange": "oltre 500.000 &euro;"
+      },
+      "rooms": "5+",
+      "surface": "733 m²",
+      "typology": {
+       "id": 265,
+       "name": "Capannone"
+      },
+      "ga4Garage": "6 posto auto",
+      "typologyGA4Translation": "Capannone",
+      "ga4features": [
+       "cablato"
+      ],
+      "ga4Heating": "Autonomo",
+      "caption": "Capannone + Uffici Milano (Corvetto) - in Vendita",
+      "category": {
+       "id": 25,
+       "name": "Capannoni"
+      },
+      "photo": {
+       "id": 2005195146,
+       "caption": "Zona",
+       "urls": {
+        "small": "https://pwm.im-cdn.it/image/2005195146/xxs-c.jpg",
+        "medium": "https://pwm.im-cdn.it/image/2005195146/m-c.jpg",
+        "large": "https://pwm.im-cdn.it/image/2005195146/xxl.jpg"
+       }
+      },
+      "location": {
+       "address": "Via Caviglia",
+       "latitude": 45.44275284,
+       "longitude": 9.23114586,
+       "marker": "marker",
+       "region": "Lombardia",
+       "province": "Milano",
+       "macrozone": "Porta Vittoria, Lodi",
+       "microzone": "Bologna - Sulmona",
+       "city": "Milano",
+       "nation": {
+        "id": "IT",
+        "name": "Italia"
+       }
+      },
+      "featureList": [
+       {
+        "type": "rooms",
+        "label": "5+ locali",
+        "compactLabel": "5+"
+       },
+       {
+        "type": "surface",
+        "label": "733 m²"
+       },
+       {
+        "type": "bathrooms",
+        "label": "3+ bagni",
+        "compactLabel": "3+"
+       }
+      ]
+     }
+    ],
+    "title": "Capannone via Caviglia 3, Bologna - Sulmona, Milano",
+    "type": "ad",
+    "typology": {
+     "id": 265,
+     "name": "Capannone"
+    },
+    "hasMainProperty": false,
+    "isProjectLike": false,
+    "isMosaic": false
+   },
+   "raw_detail": {
+    "pageProps": {
+     "detailData": {
+      "realEstate": {
+       "properties": [
+        {
+         "availability": "libero",
+         "buildingYear": 1960,
+         "cadastrals": [],
+         "condition": "Ottimo / Ristrutturato",
+         "features": [
+          "Cablato"
+         ],
+         "location": {
+          "latitude": 45.44275284,
+          "longitude": 9.23114586,
+          "zoom": null,
+          "nation": {
+           "id": "IT",
+           "name": "Italia",
+           "keyurl": "Italia"
+          },
+          "region": "Lombardia",
+          "province": "Milano",
+          "provinceId": "MI",
+          "city": "Milano",
+          "cityId": 8042,
+          "macrozone": "Porta Vittoria, Lodi",
+          "macrozoneId": 10069,
+          "microzone": "Bologna - Sulmona",
+          "locality": null,
+          "address": "Via Caviglia",
+          "streetNumber": "3",
+          "marker": "marker"
+         },
+         "price": {
+          "visible": true,
+          "value": 1550000,
+          "formattedValue": "€ 1.550.000",
+          "priceRange": "oltre 500.000 &euro;",
+          "pricePerSquareMeter": "2.115 €/m²"
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "updated_at": "2026-09-16T01:33:26+00:00",
+   "baseline_scraped_at": null
+  },
+  "immobiliare_130966026": {
+   "source": "immobiliare.it",
+   "id": "130966026",
+   "city": "Milano",
+   "category": "vendita-capannoni",
+   "url": "https://www.immobiliare.it/annunci/130966026/",
+   "enriched": true,
+   "scraped_at": "2026-09-16T14:30:20.321534+00:00",
+   "titolo": "Capannone, Vigentino - Fatima, Milano",
+   "prezzo": "prezzo su richiesta",
+   "prezzo_valore": null,
+   "superficie_mq": "350 m²",
+   "tipologia": "Capannone",
+   "categoria": "Capannoni",
+   "indirizzo": "Via Giuseppe Ripamonti",
+   "comune": "Milano",
+   "provincia": "Milano",
+   "zona": "Ripamonti, Vigentino",
+   "descrizione_completa": "Proponiamo in Via Ripamonti in zona Vigentino Chiesa rossa, opportunità di trasformazione in residenziale, trattasi di un laboratorio di Mq 350 indipendente in posizione strategica.\nAmpio cortile esterno con 4 posti auto coperti ampliabili.\nCarotaggi già effettuati, nessuna bonifica necessaria.\nCertificato urbanistico\nProgettazione inclusa",
+   "energy": {
+    "zeroEnergyBuilding": false,
+    "thermalInsulation": null,
+    "emission": null,
+    "heatingType": "autonomo, a radiatori, alimentato a metano",
+    "class": {
+     "name": "F",
+     "color": "#d22300"
+    },
+    "epi": "≥ 3,51",
+    "epiUm": "m²",
+    "renewableEpiUm": "m²"
+   },
+   "costs": {
+    "appliedVat": null,
+    "agencyCommission": null,
+    "commissionSubject": null,
+    "condominiumExpenses": "€ 200/mese",
+    "notaryCommission": null
+   },
+   "surface": "350 m²",
+   "typology": {
+    "id": 109,
+    "name": "Capannone"
+   },
+   "contacts": null,
+   "raw_search": {
+    "visibility": "star",
+    "dataType": "list-real-estate",
+    "id": 130966026,
+    "uuid": "632e205d-d957-5244-a0ea-6af4b6362e38",
+    "advertiser": {
+     "agency": {
+      "id": 63165,
+      "type": "agency",
+      "showOnlyAgentPhone": false,
+      "phones": [
+       {
+        "type": "vTel1",
+        "value": "02 8126 6479"
+       }
+      ],
+      "bookableVisit": {
+       "isVisitBookable": true,
+       "virtualVisitEnabled": false
+      },
+      "isPaid": true,
+      "label": "agenzia",
+      "displayName": "Gammagency srls",
+      "guaranteed": false,
+      "showAgentPhone": false,
+      "showLogo": true,
+      "imageUrls": {
+       "small": "https://pic.im-cdn.it/imagenoresize/852199982.jpg",
+       "large": "https://pic.im-cdn.it/imagenoresize/852199984.jpg"
+      },
+      "agencyUrl": "https://www.immobiliare.it/agenzie-immobiliari/63165/gammagency-trezzano-sul-naviglio/",
+      "showExternalLink": false
+     },
+     "supervisor": {
+      "type": "agent",
+      "imageGender": "male",
+      "phones": [
+       {
+        "type": "vTel1",
+        "value": "02 8126 6479"
+       }
+      ],
+      "imageType": "agent",
+      "displayName": "Massimo Roverelli",
+      "label": "agente immobiliare"
+     },
+     "hasCallNumbers": true
+    },
+    "contract": "sale",
+    "isNew": false,
+    "luxury": false,
+    "price": {
+     "visible": false,
+     "formattedValue": "prezzo su richiesta",
+     "priceRange": "Prezzo su richiesta"
+    },
+    "properties": [
+     {
+      "multimedia": {
+       "photos": [
+        {
+         "id": 1969921550,
+         "caption": "Mappa",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/1969921550/xxs-c.jpg"
+         }
+        }
+       ],
+       "virtualTours": [],
+       "hasMultimedia": true
+      },
+      "bathrooms": "1",
+      "isMain": true,
+      "floor": {
+       "abbreviation": null,
+       "value": "Piano terra",
+       "floorOnlyValue": "piano terra",
+       "ga4FloorValue": "piano terra"
+      },
+      "ga4Condition": "Da ristrutturare",
+      "price": {
+       "visible": false,
+       "formattedValue": "prezzo su richiesta",
+       "priceRange": "Prezzo su richiesta"
+      },
+      "surface": "350 m²",
+      "typology": {
+       "id": 265,
+       "name": "Capannone"
+      },
+      "typologyGA4Translation": "Capannone",
+      "ga4features": [
+       "spogliatoio",
+       "accesso per disabili",
+       "docce"
+      ],
+      "ga4Heating": "Autonomo",
+      "caption": "VENDESI LABORATORIO CON POSSIBILITA' DI TRASFORMAZIONE",
+      "category": {
+       "id": 25,
+       "name": "Capannoni"
+      },
+      "photo": {
+       "id": 1969921550,
+       "caption": "Mappa",
+       "urls": {
+        "small": "https://pwm.im-cdn.it/image/1969921550/xxs-c.jpg",
+        "medium": "https://pwm.im-cdn.it/image/1969921550/m-c.jpg",
+        "large": "https://pwm.im-cdn.it/image/1969921550/xxl.jpg"
+       }
+      },
+      "location": {
+       "address": "Via Giuseppe Ripamonti",
+       "latitude": 45.43408585,
+       "longitude": 9.20117855,
+       "marker": "only_area",
+       "region": "Lombardia",
+       "province": "Milano",
+       "macrozone": "Ripamonti, Vigentino",
+       "microzone": "Vigentino - Fatima",
+       "city": "Milano",
+       "nation": {
+        "id": "IT",
+        "name": "Italia"
+       }
+      },
+      "featureList": [
+       {
+        "type": "surface",
+        "label": "350 m²"
+       },
+       {
+        "type": "bathrooms",
+        "label": "1 bagno",
+        "compactLabel": "1"
+       }
+      ]
+     }
+    ],
+    "title": "Capannone, Vigentino - Fatima, Milano",
+    "type": "ad",
+    "typology": {
+     "id": 265,
+     "name": "Capannone"
+    },
+    "hasMainProperty": false,
+    "isProjectLike": false,
+    "isMosaic": false
+   },
+   "raw_detail": {
+    "pageProps": {
+     "detailData": {
+      "realEstate": {
+       "properties": [
+        {
+         "availability": "libero",
+         "cadastrals": [],
+         "condition": "Da ristrutturare",
+         "features": [
+          "Spogliatoio",
+          "Docce"
+         ],
+         "floor": {
+          "abbreviation": null,
+          "value": "Piano terra, con accesso disabili",
+          "floorOnlyValue": "piano terra",
+          "ga4FloorValue": "piano terra"
+         },
+         "floors": "1 piano",
+         "industrial": {
+          "barnHeight": "6 m",
+          "underBeamHeight": null,
+          "pillars": false,
+          "bayes": null,
+          "numberLoadingDock": null,
+          "numberCranes": null,
+          "payload": null
+         },
+         "location": {
+          "latitude": 45.43408585,
+          "longitude": 9.20117855,
+          "zoom": 15,
+          "nation": {
+           "id": "IT",
+           "name": "Italia",
+           "keyurl": "Italia"
+          },
+          "region": "Lombardia",
+          "province": "Milano",
+          "provinceId": "MI",
+          "city": "Milano",
+          "cityId": 8042,
+          "macrozone": "Ripamonti, Vigentino",
+          "macrozoneId": 10293,
+          "microzone": "Vigentino - Fatima",
+          "locality": null,
+          "address": null,
+          "streetNumber": null,
+          "marker": "only_area"
+         },
+         "price": {
+          "visible": false,
+          "formattedValue": "prezzo su richiesta",
+          "priceRange": "Prezzo su richiesta"
+         },
+         "surfaceConstitution": {
+          "surfaceConstitutionElements": [
+           {
+            "constitution": "Laboratorio",
+            "constitutionKey": "other",
+            "surface": "350,0 m²",
+            "percentage": 100,
+            "commercialSurface": "350,0 m²",
+            "floor": {
+             "value": "piano terra"
+            },
+            "surfaceType": "Principale"
+           }
+          ],
+          "totalMainSurface": "350,0 m²"
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "updated_at": "2026-07-14T15:58:26+00:00",
+   "baseline_scraped_at": "2026-09-13T13:45:36.371584+00:00",
+   "staleness_diff_days": 60.90775893037037,
+   "stale_streak_at_this_point": 1
+  },
+  "immobiliare_132382128": {
+   "source": "immobiliare.it",
+   "id": "132382128",
+   "city": "Milano",
+   "category": "vendita-capannoni",
+   "url": "https://www.immobiliare.it/annunci/132382128/",
+   "enriched": true,
+   "scraped_at": "2026-09-16T14:30:10.274517+00:00",
+   "titolo": "Scuderia all'asta via ASIAGO ,66, Milano",
+   "prezzo": "€ 20.800,00",
+   "prezzo_valore": 20800,
+   "superficie_mq": "14 m²",
+   "tipologia": "Scuderia",
+   "categoria": "Commerciale",
+   "indirizzo": "Via ASIAGO ,66",
+   "comune": "Milano",
+   "provincia": "Milano",
+   "zona": "Precotto, Turro",
+   "descrizione_completa": "Intera piena proprietà autorimessa posta al piano primo interrato",
+   "energy": null,
+   "costs": null,
+   "surface": "14 m²",
+   "typology": {
+    "id": 63,
+    "name": "Immobile"
+   },
+   "contacts": null,
+   "raw_search": {
+    "visibility": "premium",
+    "dataType": "list-real-estate",
+    "id": 132382128,
+    "uuid": "b29c864e-f35d-507b-9853-268a6096105b",
+    "advertiser": {
+     "agency": {
+      "id": 213,
+      "type": "court",
+      "showOnlyAgentPhone": false,
+      "phones": [],
+      "isPaid": false,
+      "label": "Tribunale",
+      "displayName": "Tribunale di Milano",
+      "guaranteed": false,
+      "showAgentPhone": false,
+      "showLogo": true,
+      "imageUrls": {
+       "large": "https://pic.im-cdn.it/imagenoresize/1907029044.jpg"
+      },
+      "agencyUrl": "https://www.immobiliare.it/pro/213/tribunale-di-milano/",
+      "showExternalLink": false
+     },
+     "supervisor": {
+      "type": "delegate",
+      "imageGender": "male",
+      "phones": [
+       {
+        "type": "tel1",
+        "value": "02 5518 1128"
+       }
+      ],
+      "imageType": "agent",
+      "label": "Delegato"
+     },
+     "hasCallNumbers": true
+    },
+    "contract": "auction",
+    "isNew": true,
+    "luxury": false,
+    "price": {
+     "visible": true,
+     "value": 20800,
+     "formattedValue": "€ 20.800,00",
+     "priceRange": "fino a 100.000 &euro;"
+    },
+    "properties": [
+     {
+      "multimedia": {
+       "photos": [
+        {
+         "id": 2003622492,
+         "caption": "Zona",
+         "urls": {
+          "small": "https://pwm.im-cdn.it/image/2003622492/xxs-c.jpg"
+         }
+        }
+       ],
+       "virtualTours": [],
+       "hasMultimedia": true
+      },
+      "isMain": true,
+      "price": {
+       "visible": true,
+       "value": 20800,
+       "formattedValue": "€ 20.800,00",
+       "priceRange": "fino a 100.000 &euro;"
+      },
+      "surface": "14 m²",
+      "typology": {
+       "id": 82,
+       "name": "Scuderia"
+      },
+      "typologyGA4Translation": "Immobile",
+      "ga4Heating": "Assente",
+      "category": {
+       "id": 2,
+       "name": "Commerciale"
+      },
+      "photo": {
+       "id": 2003622492,
+       "caption": "Zona",
+       "urls": {
+        "small": "https://pwm.im-cdn.it/image/2003622492/xxs-c.jpg",
+        "medium": "https://pwm.im-cdn.it/image/2003622492/m-c.jpg",
+        "large": "https://pwm.im-cdn.it/image/2003622492/xxl.jpg"
+       }
+      },
+      "location": {
+       "address": "Via ASIAGO ,66",
+       "latitude": 45.5060997,
+       "longitude": 9.23167038,
+       "marker": "marker",
+       "region": "Lombardia",
+       "province": "Milano",
+       "macrozone": "Precotto, Turro",
+       "microzone": "Gorla",
+       "city": "Milano",
+       "nation": {
+        "id": "IT",
+        "name": "Italia"
+       }
+      },
+      "featureList": [
+       {
+        "type": "saleDate",
+        "isHighlighted": false,
+        "label": "22/10/2026"
+       },
+       {
+        "type": "surface",
+        "label": "14 m²"
+       }
+      ]
+     }
+    ],
+    "title": "Scuderia all'asta via ASIAGO ,66, Milano",
+    "type": "auction",
+    "typology": {
+     "id": 82,
+     "name": "Scuderia"
+    },
+    "hasMainProperty": true,
+    "isProjectLike": false,
+    "isMosaic": false
+   },
+   "raw_detail": {
+    "pageProps": {
+     "detailData": {
+      "realEstate": {
+       "properties": [
+        {
+         "auction": {
+          "highlightSaleDate": false,
+          "saleDate": "22/10/2026, 15:30",
+          "saleDateValue": "22/10/2026",
+          "modalityDeposit": null,
+          "publishDate": 1789136219,
+          "changeDate": "11/09/2026",
+          "expenseBookedDebt": "No",
+          "contributionNotDue": "No",
+          "totalLotEstates": 1,
+          "auctionRegister": null,
+          "auctionSubjects": [
+           {
+            "name": "Silvia",
+            "surname": "Vaghi",
+            "phone": null,
+            "mobilePhone": null,
+            "auctionSubjectType": "Giudice"
+           },
+           {
+            "name": "GIOVANNI ANTONIO",
+            "surname": "SANTORO",
+            "phone": null,
+            "mobilePhone": null,
+            "auctionSubjectType": "Custode"
+           },
+           {
+            "name": "Giovanni Antonio",
+            "surname": "Santoro",
+            "phone": "02 5518 1128",
+            "mobilePhone": null,
+            "auctionSubjectType": "Delegato"
+           }
+          ],
+          "salePlace": "Via E. De Amicis n.47",
+          "saleType": "senza incanto",
+          "minimumOffer": "€ 15.600,00",
+          "expertise": "€ 26.000",
+          "minimumRise": "€ 500",
+          "procedureNumber": "560/2025",
+          "procedureType": "Esecuzione Immobiliare",
+          "auctionCourt": "Milano"
+         },
+         "availability": "Libero",
+         "cadastrals": [],
+         "features": [],
+         "location": {
+          "latitude": 45.5060997,
+          "longitude": 9.23167038,
+          "zoom": null,
+          "nation": {
+           "id": "IT",
+           "name": "Italia",
+           "keyurl": "Italia"
+          },
+          "region": "Lombardia",
+          "province": "Milano",
+          "provinceId": "MI",
+          "city": "Milano",
+          "cityId": 8042,
+          "macrozone": "Precotto, Turro",
+          "macrozoneId": 10316,
+          "microzone": "Gorla",
+          "locality": null,
+          "address": "Via ASIAGO ,66",
+          "streetNumber": null,
+          "marker": "marker"
+         },
+         "price": {
+          "visible": true,
+          "value": 20800,
+          "priceRange": "fino a 100.000 &euro;"
+         }
+        }
+       ]
+      }
+     }
+    }
+   },
+   "updated_at": "2026-09-12T11:30:31+00:00",
+   "baseline_scraped_at": "2026-09-13T13:46:25.918371+00:00",
+   "staleness_diff_days": 1.0943856292939815
+  }
+ }
+}

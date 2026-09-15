@@ -1,0 +1,560 @@
+<!doctype html>
+<title>Prontobox Scouting Setup</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root{
+    --bg:#f6f7f5;
+    --surface:#ffffff;
+    --surface-alt:#eceeea;
+    --ink:#171d1b;
+    --ink-soft:#4c564f;
+    --ink-faint:#79837b;
+    --border:#d9ded6;
+    --border-strong:#c1c9bd;
+
+    --accent:#c1682c;
+    --accent-ink:#ffffff;
+    --accent-soft:#f3decb;
+    --accent-soft-border:#e6bf99;
+
+    --teal:#2b6864;
+    --teal-soft:#dceae8;
+    --teal-soft-border:#b7d4d1;
+
+    --success:#3c7a49;
+    --success-soft:#deebdf;
+    --success-border:#b7d3bb;
+
+    --warn:#a8721c;
+    --warn-soft:#f4e4c3;
+    --warn-border:#dcbd7c;
+
+    --critical:#ae3a33;
+    --critical-soft:#f5dad6;
+    --critical-border:#e0aca6;
+
+    --code-bg:#1b221f;
+    --code-fg:#e8ece6;
+    --code-accent:#e8a15c;
+    --code-comment:#8ea394;
+    --code-border:#333c37;
+
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#121614;
+      --surface:#181e1b;
+      --surface-alt:#202723;
+      --ink:#eaede8;
+      --ink-soft:#aab4ac;
+      --ink-faint:#7c877e;
+      --border:#2f3934;
+      --border-strong:#3c473f;
+
+      --accent:#e5905a;
+      --accent-ink:#14100b;
+      --accent-soft:#3a2a1d;
+      --accent-soft-border:#5c4128;
+
+      --teal:#66a49f;
+      --teal-soft:#1d3634;
+      --teal-soft-border:#2b4d49;
+
+      --success:#79bd86;
+      --success-soft:#1e3323;
+      --success-border:#31502f;
+
+      --warn:#d9a24b;
+      --warn-soft:#3a2c10;
+      --warn-border:#5c451b;
+
+      --critical:#e58a82;
+      --critical-soft:#3c1e1b;
+      --critical-border:#5c2e28;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#121614;
+    --surface:#181e1b;
+    --surface-alt:#202723;
+    --ink:#eaede8;
+    --ink-soft:#aab4ac;
+    --ink-faint:#7c877e;
+    --border:#2f3934;
+    --border-strong:#3c473f;
+
+    --accent:#e5905a;
+    --accent-ink:#14100b;
+    --accent-soft:#3a2a1d;
+    --accent-soft-border:#5c4128;
+
+    --teal:#66a49f;
+    --teal-soft:#1d3634;
+    --teal-soft-border:#2b4d49;
+
+    --success:#79bd86;
+    --success-soft:#1e3323;
+    --success-border:#31502f;
+
+    --warn:#d9a24b;
+    --warn-soft:#3a2c10;
+    --warn-border:#5c451b;
+
+    --critical:#e58a82;
+    --critical-soft:#3c1e1b;
+    --critical-border:#5c2e28;
+    color-scheme: dark;
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    padding:0 20px;
+  }
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    padding-block:48px 96px;
+  }
+
+  h1,h2,h3{
+    font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+    text-wrap:balance;
+    color:var(--ink);
+    line-height:1.15;
+  }
+  .eyebrow{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:12.5px;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:600;
+  }
+  h1{
+    font-size:clamp(28px,4.4vw,40px);
+    font-weight:800;
+    margin:10px 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .subtitle{
+    font-size:17px;
+    color:var(--ink-soft);
+    max-width:62ch;
+    margin:0 0 6px;
+  }
+  .meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 18px;
+    margin-top:18px;
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:12.5px;
+    color:var(--ink-faint);
+  }
+  .meta-row strong{ color:var(--ink-soft); font-weight:600; }
+
+  header.hero{
+    border-bottom:1px solid var(--border);
+    padding-bottom:28px;
+    margin-bottom:40px;
+  }
+
+  h2{
+    font-size:21px;
+    font-weight:700;
+    margin:0;
+  }
+  h3{
+    font-size:16px;
+    font-weight:700;
+    margin:0 0 8px;
+    color:var(--ink);
+  }
+  p{ margin:0 0 12px; max-width:68ch; }
+  a{ color:var(--teal); text-decoration-thickness:1.5px; text-underline-offset:2px; }
+  code, .path{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:0.88em;
+    background:var(--surface-alt);
+    border:1px solid var(--border);
+    border-radius:4px;
+    padding:.05em .38em;
+    color:var(--ink);
+    white-space:nowrap;
+  }
+
+  /* ---- step rail ---- */
+  .steps{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .step{
+    display:grid;
+    grid-template-columns:44px 1fr;
+    gap:18px;
+    padding-block:26px;
+    border-top:1px solid var(--border);
+    position:relative;
+  }
+  .step:first-child{ border-top:none; }
+  .step-num{
+    font-family:"Archivo", sans-serif;
+    font-weight:800;
+    font-size:15px;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--accent-soft);
+    color:var(--accent);
+    border:1px solid var(--accent-soft-border);
+    margin-top:2px;
+  }
+  .step-head{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:6px;
+  }
+  .step-head h2{ margin:0; }
+  .tag{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:.03em;
+    padding:2px 8px;
+    border-radius:99px;
+    white-space:nowrap;
+  }
+  .tag.required{ background:var(--critical-soft); color:var(--critical); border:1px solid var(--critical-border); }
+  .tag.once{ background:var(--teal-soft); color:var(--teal); border:1px solid var(--teal-soft-border); }
+  .tag.optional{ background:var(--surface-alt); color:var(--ink-soft); border:1px solid var(--border-strong); }
+
+  .step-body{ max-width:70ch; }
+
+  pre{
+    background:var(--code-bg);
+    color:var(--code-fg);
+    border:1px solid var(--code-border);
+    border-radius:8px;
+    padding:14px 16px;
+    overflow-x:auto;
+    margin:12px 0;
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:13.5px;
+    line-height:1.6;
+  }
+  pre .c{ color:var(--code-comment); }
+  pre .k{ color:var(--code-accent); }
+
+  ul.plain, ol.plain{ margin:10px 0 14px; padding-left:22px; }
+  ul.plain li, ol.plain li{ margin-bottom:6px; }
+
+  /* callouts */
+  .callout{
+    border:1px solid var(--border);
+    border-left:4px solid var(--ink-faint);
+    background:var(--surface);
+    border-radius:6px;
+    padding:14px 16px;
+    margin:14px 0;
+  }
+  .callout p:last-child{ margin-bottom:0; }
+  .callout .callout-title{
+    font-family:"Archivo", sans-serif;
+    font-weight:700;
+    font-size:13.5px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    margin-bottom:6px;
+    display:flex;
+    align-items:center;
+    gap:7px;
+  }
+  .callout.warn{ border-left-color:var(--warn); background:var(--warn-soft); }
+  .callout.warn .callout-title{ color:var(--warn); }
+  .callout.critical{ border-left-color:var(--critical); background:var(--critical-soft); }
+  .callout.critical .callout-title{ color:var(--critical); }
+  .callout.success{ border-left-color:var(--success); background:var(--success-soft); }
+  .callout.success .callout-title{ color:var(--success); }
+  .callout.teal{ border-left-color:var(--teal); background:var(--teal-soft); }
+  .callout.teal .callout-title{ color:var(--teal); }
+
+  /* include/exclude table */
+  .filetable{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin:14px 0;
+  }
+  @media (max-width:620px){ .filetable{ grid-template-columns:1fr; } }
+  .filecard{
+    border-radius:8px;
+    padding:14px 16px;
+    border:1px solid var(--border);
+  }
+  .filecard.yes{ background:var(--success-soft); border-color:var(--success-border); }
+  .filecard.no{ background:var(--critical-soft); border-color:var(--critical-border); }
+  .filecard h4{
+    font-family:"Archivo", sans-serif;
+    font-size:12.5px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    margin:0 0 10px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .filecard.yes h4{ color:var(--success); }
+  .filecard.no h4{ color:var(--critical); }
+  .filecard ul{ margin:0; padding-left:18px; font-size:14.5px; }
+  .filecard li{ margin-bottom:5px; }
+  .filecard li .path{ background:var(--surface); }
+
+  /* checklist at end */
+  .checklist{
+    list-style:none;
+    margin:14px 0 0;
+    padding:0;
+    display:grid;
+    gap:8px;
+  }
+  .checklist li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    font-size:15px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:10px 14px;
+  }
+  .checklist li::before{
+    content:"";
+    flex:none;
+    width:16px; height:16px;
+    margin-top:3px;
+    border-radius:4px;
+    border:2px solid var(--accent);
+    background:var(--accent-soft);
+  }
+
+  footer{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--border);
+    font-size:13.5px;
+    color:var(--ink-faint);
+  }
+  footer a{ color:var(--ink-faint); }
+
+  table.deps{
+    width:100%;
+    border-collapse:collapse;
+    margin:12px 0;
+    font-size:14.5px;
+  }
+  table.deps th, table.deps td{
+    text-align:left;
+    padding:8px 10px;
+    border-bottom:1px solid var(--border);
+    vertical-align:top;
+  }
+  table.deps th{
+    font-family:"Archivo", sans-serif;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    color:var(--ink-faint);
+    font-weight:700;
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Prontobox Scouting &middot; guida operativa</div>
+    <h1>Portare il pannello su un altro PC</h1>
+    <p class="subtitle">Dieci passaggi, in ordine, per far funzionare lo scouting settimanale — scraper, skill e pannello — su un computer che parte da zero. Una volta finiti questi, per l'uso di tutti i giorni resta valida la guida <code>README.md</code> già nella cartella.</p>
+    <div class="meta-row">
+      <span><strong>Da fare su:</strong> il PC nuovo, non su questo</span>
+      <span><strong>Tempo previsto:</strong> 30&ndash;40 min di installazioni + un margine imprevedibile la prima volta che Idealista/Immobiliare incontrano l'anti-bot</span>
+      <span><strong>Sistema:</strong> Windows</span>
+    </div>
+  </header>
+
+  <div class="steps">
+
+    <section class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-head"><h2>Google Chrome</h2><span class="tag required">obbligatorio</span></div>
+        <p>Gli scraper di Idealista e Immobiliare non usano il Chromium interno di Playwright: aprono il <strong>Chrome vero</strong> installato sul sistema (<code>channel="chrome"</code>), perché ha un'impronta digitale meno riconoscibile dall'anti-bot dei due siti (DataDome).</p>
+        <p>Se sul PC nuovo non c'è già, installalo da <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">google.com/chrome</a> prima di ogni altro passaggio.</p>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-head"><h2>Python 3.9 o successivo</h2><span class="tag required">obbligatorio</span></div>
+        <p>Da <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python.org/downloads</a>. Durante l'installazione, spunta <strong>"Add python.exe to PATH"</strong> — senza questa spunta, il file <code>.bat</code> del pannello non troverà Python e si fermerà subito con un errore chiaro a riguardo.</p>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-head"><h2>Node.js (versione LTS)</h2><span class="tag required">obbligatorio</span></div>
+        <p>Serve solo per installare la CLI di Claude Code al passo successivo. Da <a href="https://nodejs.org" target="_blank" rel="noopener">nodejs.org</a>, scegli la versione <strong>LTS</strong>. Verifica dopo l'installazione, da un terminale nuovo:</p>
+        <pre><span class="c">// in un terminale (PowerShell o cmd), su un PC nuovo</span>
+node --version
+npm --version</pre>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <div class="step-head"><h2>CLI di Claude Code + accesso</h2><span class="tag required">obbligatorio</span></div>
+        <p>È il motore che scrive la valutazione testuale di ogni opportunità ogni settimana — il pannello lo lancia da sé, senza intervento manuale, ma deve trovarlo installato e già collegato a un account. <strong>Serve un account Claude proprio</strong> di chi userà il PC (non si eredita da un altro computer): la valutazione consuma l'uso/i crediti di quell'account.</p>
+        <pre>npm install -g --allow-scripts=@anthropic-ai/claude-code @anthropic-ai/claude-code</pre>
+        <p>Poi, dallo stesso terminale, avvia una prima volta l'accesso interattivo e segui le istruzioni a schermo per collegare l'account:</p>
+        <pre>claude</pre>
+        <div class="callout teal">
+          <div class="callout-title">Nota</div>
+          <p>Se <code>npm install</code> segnala uno script di post-installazione bloccato ("allow-scripts"), è quello mostrato sopra con <code>--allow-scripts</code> — senza, la CLI si installa ma un passaggio interno non gira.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">5</div>
+      <div class="step-body">
+        <div class="step-head"><h2>VS Code + estensione Claude Code</h2><span class="tag optional">consigliato</span></div>
+        <p>Questo è il modo per <strong>parlare con Claude interattivamente</strong> sul nuovo PC — esattamente come stiamo facendo io e te ora — utile per farsi aiutare a correggere uno scraper, capire un errore nel log, o modificare la configurazione. È un uso diverso e separato dalla CLI del passo 4 (quella lavora da sola dentro il pannello).</p>
+        <ol class="plain">
+          <li>Installa <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a></li>
+          <li>Dal pannello estensioni (<code>Ctrl+Shift+X</code>), cerca <strong>"Claude Code"</strong> e installala</li>
+          <li>Apri la cartella <code>Pronto_Automation</code> come cartella di lavoro (<em>File &rarr; Apri cartella</em>)</li>
+          <li>Avvia l'estensione e accedi con lo stesso account del passo 4</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">6</div>
+      <div class="step-body">
+        <div class="step-head"><h2>Copia i file del progetto</h2><span class="tag required">obbligatorio</span></div>
+        <p>Il modo più semplice: copia <strong>l'intera cartella</strong> <code>Pronto_Automation</code> sul PC nuovo (chiavetta, disco di rete, o uno ZIP via WeTransfer). Due cartelle vanno escluse sempre:</p>
+
+        <div class="filetable">
+          <div class="filecard yes">
+            <h4>Porta con te</h4>
+            <ul>
+              <li><span class="path">Avvia Prontobox Scouting.bat</span></li>
+              <li><span class="path">README.md</span></li>
+              <li><span class="path">pannello/</span></li>
+              <li><span class="path">.claude/skills/prontobox-scouting/</span> <em>(intera, incluso <span class="path">reference/*.csv</span>)</em></li>
+              <li><span class="path">scrapers_v2/*.py</span> + <span class="path">requirements.txt</span></li>
+              <li><span class="path">opportunities/</span> <em>(struttura cartelle; i dati dentro sono facoltativi)</em></li>
+              <li><span class="path">requirements.txt</span> nella radice</li>
+            </ul>
+          </div>
+          <div class="filecard no">
+            <h4>Lascia indietro</h4>
+            <ul>
+              <li><span class="path">scrapers_v2/profilo_chrome_idealista/</span></li>
+              <li><span class="path">scrapers_v2/profilo_chrome_immobiliare/</span></li>
+              <li><span class="path">__pycache__/</span> (ovunque)</li>
+              <li><span class="path">*.log</span> (rumore, non servono)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout warn">
+          <div class="callout-title">Perché escludere i profili Chrome</div>
+          <p>Sono cookie di sessione legati all'impronta di <em>questo</em> PC: copiarli su un altro computer non aiuta — DataDome lega il cookie al dispositivo che l'ha ottenuto — e insieme pesano quasi 800&nbsp;MB di roba inutile a chi li riceve.</p>
+        </div>
+
+        <p style="margin-top:16px"><strong>Se vuoi includere anche i dati già raccolti</strong> (i dataset delle aste, Idealista, Immobiliare): sono file grandi — solo <code>dataset_immobiliare_completo.json</code> supera 1&nbsp;GB. Escludendo i profili Chrome di cui sopra, il totale resta comunque entro i 2&nbsp;GB del piano gratuito di WeTransfer.</p>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">7</div>
+      <div class="step-body">
+        <div class="step-head"><h2>Dipendenze Python del progetto</h2><span class="tag required">obbligatorio</span></div>
+        <p>Da un terminale, dentro la cartella <code>Pronto_Automation</code> appena copiata:</p>
+        <pre><span class="c">// libreria per leggere config.yaml (o la installa da solo il .bat al primo avvio)</span>
+pip install -r requirements.txt
+
+<span class="c">// Playwright + parsing HTML, usati dagli scraper</span>
+pip install -r scrapers_v2\requirements.txt
+
+<span class="c">// indispensabile: dice a Playwright di usare il Chrome vero installato al passo 1</span>
+playwright install chrome</pre>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">8</div>
+      <div class="step-body">
+        <div class="step-head"><h2>Verifica che la skill sia al posto giusto</h2><span class="tag once">una tantum</span></div>
+        <p>Se hai copiato l'intera cartella al passo 6, questo passaggio è già a posto: controlla solo che esista</p>
+        <pre>Pronto_Automation\.claude\skills\prontobox-scouting\scout.py</pre>
+        <p>Se invece stai ripartendo da un semplice file <code>prontobox-scouting-skill.zip</code> (senza il resto del progetto), estrailo dentro <code>.claude\skills\prontobox-scouting\</code> — a mano, oppure chiedendolo a una sessione di Claude Code aperta su quel PC.</p>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">9</div>
+      <div class="step-body">
+        <div class="step-head"><h2>Primo avvio del pannello</h2><span class="tag required">obbligatorio</span></div>
+        <p>Doppio clic su <code>Avvia Prontobox Scouting.bat</code>. Si apre una finestra nera (lasciala aperta) e dopo un paio di secondi il browser mostra il pannello su <code>http://127.0.0.1:8765/</code>. Nella schermata Home, premi <strong>Avvia scansione settimanale</strong>.</p>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="step-num">10</div>
+      <div class="step-body">
+        <div class="step-head"><h2>Cosa aspettarsi da Idealista e Immobiliare</h2><span class="tag optional">da sapere</span></div>
+        <p>Su questo PC, la prima scansione ha incontrato un blocco anti-bot che ha richiesto una pausa di alcune ore prima di sbloccarsi. È probabile che capiti di nuovo su un profilo Chrome nuovo di zecca: non è un errore da correggere, è normale rodaggio.</p>
+        <ul class="plain">
+          <li>Tieni d'occhio la finestra Chrome che si apre durante questa fase: se compare un controllo anti-bot, risolvilo a mano appena possibile (hai circa 20 secondi prima che lo script riprovi da solo)</li>
+          <li>Se si blocca per 3 città di fila, lo script si ferma da solo invece di insistere all'infinito — è voluto</li>
+          <li>Se resta bloccato, chiudi tutto e riprova dopo qualche ora: è quasi sempre un limite temporaneo legato alla sessione, non un guasto</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="callout success" style="margin-top:36px">
+    <div class="callout-title">Sei pronto quando…</div>
+    <ul class="checklist">
+      <li><code>python --version</code>, <code>node --version</code> e <code>claude --version</code> rispondono tutti da un terminale nuovo</li>
+      <li><code>Pronto_Automation\.claude\skills\prontobox-scouting\scout.py</code> esiste</li>
+      <li>Il doppio clic su <code>Avvia Prontobox Scouting.bat</code> apre il pannello nel browser senza errori di Python mancante</li>
+      <li>La Home del pannello mostra il pulsante <strong>Avvia scansione settimanale</strong></li>
+    </ul>
+  </div>
+
+  <footer>
+    Per l'uso settimanale una volta installato — schermate Home / Avanzamento / Risultati / Storico, come cambiare <code>config.yaml</code>, problemi comuni — resta valida <code>README.md</code> nella cartella del progetto.
+  </footer>
+
+</div>

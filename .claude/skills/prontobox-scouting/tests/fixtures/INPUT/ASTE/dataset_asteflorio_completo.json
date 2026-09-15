@@ -1,0 +1,30 @@
+{
+ "generated_at": "2026-09-14T13:35:41.571353+00:00",
+ "total": 2,
+ "listings": {
+  "asteflorio_84": {
+   "source": "asteflorio.it",
+   "city": "Roma",
+   "scraped_at": "2026-09-13T12:44:27.403188+00:00",
+   "id": "84",
+   "url": "https://asteflorio.it/aste/magazzino-a-roma-rm-roma-84",
+   "titolo": "Magazzino a Roma (RM)",
+   "prezzo": "2221.50",
+   "valuta": "EUR",
+   "immagine": "https://img.asteflorio.it/insecure/rs:fill:600:400/g:sm/q:80/plain/s3://asteflorio-images/placeholders/placeholder_magazzini.webp@webp",
+   "descrizione_completa": "Magazzino a Roma (RM)"
+  },
+  "asteflorio_32": {
+   "source": "asteflorio.it",
+   "city": "Milano",
+   "scraped_at": "2026-09-13T12:44:17.219296+00:00",
+   "id": "32",
+   "url": "https://asteflorio.it/aste/magazzino-a-milano-mi-milano-32",
+   "titolo": "Magazzino a Milano (MI)",
+   "prezzo": "31800.00",
+   "valuta": "EUR",
+   "immagine": "https://img.asteflorio.it/insecure/rs:fit:800:600/plain/s3://asteflorio-images/4574845/foto/esterno_facciata_01.webp",
+   "descrizione_completa": "Magazzino a Milano (MI)"
+  }
+ }
+}
